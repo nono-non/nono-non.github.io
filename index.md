@@ -9,7 +9,7 @@
 
 ### 私の作品
 1. [ブログサイト](https://nono-non.github.io/)
-2. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)
+2. ![恐竜](dino.png)[恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)
 
 #### 今年の目標
 - プロムラミングの教科書をもう一周やり直す
