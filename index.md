@@ -1,19 +1,17 @@
 
 # 私のポートフォリオ
 ## 今勉強中の言語
+1. HTML
+2. CSS
+3. Markdown
+4. javascript
+5. VBE
 
+### 私の作品
+1. [ブログサイト](https://nono-non.github.io/)
+2. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)
 
-改行されない文章です
-改行されない文章です
-改行された文章です
-改行された文章です
-段落です
-
-これはテストページです！  本文です  
-aaaa  
-- aaa
-- cc
-1. aaa
-2. eee
- [リンクです](https://nnn.ed.nico)![Uploading image.png…]()
-
+#### 今年の目標
+- プロムラミングの教科書をもう一周やり直す
+- 恐竜ゲームにいろんな機能を追加していく
+- jeykllのcaymanを使って簡単なブログサイトを作ってみる
