@@ -2,8 +2,8 @@
 # 神楽の部屋
 ## 自己紹介
 [自己紹介](selfintroduction.html)
-### 最新記事
-#### カテゴリー別
+### ブログ
+[ブログ](blog.html)
 ##### 私の作品
 1. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)![恐竜](dino.png)
 
