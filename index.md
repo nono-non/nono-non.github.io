@@ -3,7 +3,7 @@
 ## 自己紹介
 [自己紹介](selfintroduction.html)
 ### ブログ
-[ブログ](blog.html)
+[ブログ](blog/blog.html)
 ##### 私の作品
 1. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)![恐竜](dino.png)
 
