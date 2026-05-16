@@ -2,7 +2,7 @@
 # 神楽の部屋
 ## リンク
 [日々のブログ](https://nnn.ed.nico) <br>
-[自己紹介](https://nnn.ed.nico)
+[自己紹介](selfintroduction.html)
 ### 今勉強中の言語
 1. HTML
 2. CSS
