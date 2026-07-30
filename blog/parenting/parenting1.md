@@ -1,6 +1,7 @@
 ---
-title: if文について
+title: ふぇりーちぇ
 date: 2026-05-16
 category: javascript
 ---
-## テスト
+## if文について
+[トップページへ戻る](../index.html)
