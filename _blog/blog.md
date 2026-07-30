@@ -1,6 +1,3 @@
----
-title: ふぇりーちぇ
----
 ## ブログ
 [テスト](parenting/parenting1.md)
 ### カテゴリー別
