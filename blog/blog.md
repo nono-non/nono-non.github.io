@@ -1,4 +1,4 @@
 ## ブログ
-[テスト](blogtemplete.html)
+[テスト](/2026/07/30/test.html)
 ### カテゴリー別
 [トップページへ戻る](../index.html)
