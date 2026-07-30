@@ -1,6 +1,3 @@
----
-title: ふぇりーちぇ
----
 ## 自己紹介
 [自己紹介](selfintroduction.html)
 ## ブログ
