@@ -12,6 +12,12 @@ layout: default
 
 <hr>
 
+{% if page.previous %}
+  <a href="{{ page.previous.url }}">← 前の記事</a>
+{% end if %}
+{% if page.next %}
+  <a href="{{ page.next.url }}">次の記事 →</a>
+{% end if %}
 <p>
 <a href="/">トップページへ戻る</a>
 </p>

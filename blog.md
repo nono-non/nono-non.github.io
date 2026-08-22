@@ -1,8 +1,19 @@
+---
+layout: default
+title: "ブログ一覧"
+---
+
 ## ブログ
-[持ってる株① コロプラ](/2026/08/06/kabu.html)<br>
-[持ってる株② トランヴィア](/2026/08/08/kabu.html)<br>
-[持ってる株③ ハウザン製薬](/2026/08/14/kabu.html)<br>
-[持ってる株④ ビナミルク](/2026/08/15/kabu.html)<br>
-[持ってる株⑤ ホーチミンインフラ投資](/2026/08/18/kabu.html)<br>
+{% for post in site.posts %}
+  <p>
+    {{ post.date | date: "%Y年%m月%d日" }}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </p>
+{% endfor %}
 ### カテゴリー別
 [トップページへ戻る](../index.html)
+
+
+
+
+

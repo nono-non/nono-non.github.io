@@ -1,3 +1,8 @@
+---
+layout: default
+title: "自己紹介"
+---
+
 # 自己紹介
 現在javascriptを勉強中です。
 caymanを使ってgithub上でブログを書いていこうかなと思っています。
