@@ -13,11 +13,11 @@ layout: default
 <hr>
 
 {% if page.previous %}
-  <a href="{{ page.previous.url }}">&nbsp;&nbsp;← 前の記事&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <a href="{{ page.previous.url }}">&nbsp;&nbsp;← 前の記事&nbsp;&nbsp;</a>
 {% endif %}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-{% if page.next %}
-  <a href="{{ page.next.url }}">次の記事 →&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;{% if page.next %}
+  <a href="{{ page.next.url }}">&nbsp;&nbsp次の記事 →&nbsp;&nbsp;</a>
 {% endif %}
 <p>
 <a href="/">トップページへ戻る</a>
