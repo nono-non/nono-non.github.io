@@ -1,1 +1,7 @@
-p
+---
+---
+@import "{{ site.theme }}";
+
+p {
+  margin-bottom: 1.8em;
+}
