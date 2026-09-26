@@ -43,11 +43,11 @@
   margin-right: 0.5em;
 }
 
-#markdown-toc ol {
+#markdown-toc ul {
   position: relative;
 }
  
-#markdown-toc ol li {
+#markdown-toc ul li {
   padding: 1em 0 0 1em;
   border-bottom: dotted 1px #FFB2AE  ;
   list-style: none;
@@ -57,7 +57,7 @@
   color: #928484 ; /*←見出しの文字色*/
 }
  
-#markdown-toc ol li::before {
+#markdown-toc ul li::before {
   font-family: FontAwesome;
   content: "\f105"; /*←見出しアイコン*/
   color: #FAAFAA; /*←見出しアイコンの色*/
@@ -65,6 +65,6 @@
   left : 1em;
 }
  
-#markdown-toc ol li:last-child {
+#markdown-toc ul li:last-child {
   border-bottom: none;
 }
