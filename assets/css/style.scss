@@ -5,3 +5,12 @@
 .main-content p {
   margin-bottom: 2.3em;
 }
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-text {
+  font-size: 85%;
+}
