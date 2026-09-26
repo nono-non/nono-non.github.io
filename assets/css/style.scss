@@ -2,8 +2,10 @@
 ---
 @import "{{ site.theme }}";
 
-h6 {
-  font-size 1em;
+//大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
+
+.main-content h6 {
+  font-size: 1em;
 }
 
 .main-content p {
@@ -18,3 +20,5 @@ h6 {
 .small-text {
   font-size: 85%;
 }
+
+//.toc-box {} //もくじに設定したクラス名あとで装飾
