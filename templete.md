@@ -8,7 +8,7 @@ tags:
 
 ❹本文を書く
 
-<div class="toc-box">
+<div class="toc-box" markdown="1">
 
 ###### もくじ
 * TOC
