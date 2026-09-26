@@ -8,13 +8,13 @@ tags:
 
 ❹本文を書く
 
-<details open class="toc-box" markdown="1">
+<div class="toc-box" markdown="1">
 
-<summary class="toc-title">もくじ</summary>
+<span class="toc-title">もくじ</span>
 * TOC
 {:toc}
 
-</details>
+</div>
 
 <span class="small-text">
 出典：株式会社コロプラ「有価証券報告書」(2020年9月＆2025年9月)を基に作成</span>
