@@ -46,17 +46,17 @@
 #markdown-toc ul {
   position: relative;
 }
- 
+
 #markdown-toc ul li {
   padding: 1em 0 0 1em;
   border-bottom: dotted 1px #FFB2AE;
   list-style: none;
 }
- 
+
 #markdown-toc a {
   color: #928484; /*←見出しの文字色*/
 }
- 
+
 #markdown-toc ul li::before {
   font-family: FontAwesome;
   content: "\f105"; /*←見出しアイコン*/
@@ -64,7 +64,7 @@
   position: absolute;
   left : 1em;
 }
- 
+
 #markdown-toc ul li:last-child {
   border-bottom: none;
 }
