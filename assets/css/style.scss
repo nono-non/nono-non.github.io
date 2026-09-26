@@ -8,11 +8,6 @@
   margin-bottom: 2.5em;
 }
 
-.toc-label {
-  font-weight: bold;
-  font-size: 1.2em; // お好みで
-}
-
 .post-navigation {
   display: flex;
   justify-content: space-between;
@@ -22,4 +17,15 @@
   font-size: 85%;
 }
 
-//.toc-box {} //もくじに設定したクラス名あとで装飾
+.toc-box {
+
+} //もくじに設定したクラス名あとで装飾
+
+.toc-label {
+  font-weight: bold;
+  font-size: 1.2em; // お好みで
+}
+
+#markdown-toc {
+
+}
