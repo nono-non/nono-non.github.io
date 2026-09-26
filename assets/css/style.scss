@@ -43,7 +43,7 @@
   margin-right: 0.5em;
 }
 
-#markdown-toc {
+#markdown-toc ul {
   position: relative;
 }
 
@@ -57,7 +57,7 @@
   color: #928484; /*←見出しの文字色*/
 }
 
-#markdown-toc li::before {
+#markdown-toc ul li::before {
   font-family: FontAwesome;
   content: "\f105"; /*←見出しアイコン*/
   color: #FAAFAA; /*←見出しアイコンの色*/
