@@ -1,5 +1,3 @@
 title: "ふぇりーちぇ"
 description: "試行錯誤中"
 theme: jekyll-theme-cayman
-kramdown:
-  parse_block_html: true
