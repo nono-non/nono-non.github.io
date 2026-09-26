@@ -10,7 +10,7 @@ tags:
 
 <div class="toc-box" markdown="1">
 
-###### もくじ
+<span class="toc-label">もくじ</span>
 * TOC
 {:toc}
 
