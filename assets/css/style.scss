@@ -34,22 +34,22 @@
 
 .toc-title::before {
   font-family: FontAwesome;
-  content : "\f002"; /*←アイコン*/
+  content : "\f002"; /*←アイコン*/
   font-size: 1.2em;
   border-radius: 50%;
   color: #FFF; /*←アイコンの色*/
   background-color: #FAAFAA; /*←アイコンの背景色*/
-  padding: 0.5em;
+  padding: 0.5em;
   margin-right: 0.5em;
 }
 
 #markdown-toc ul {
-  position: relative;
+  position: relative;
 }
  
 #markdown-toc ul li {
   padding: 1em 0 0 1em;
-  border-bottom: dotted 1px #FFB2AE  ;
+  border-bottom: dotted 1px #FFB2AE;
   list-style: none;
 }
  
@@ -59,10 +59,10 @@
  
 #markdown-toc ul li::before {
   font-family: FontAwesome;
-  content: "\f105"; /*←見出しアイコン*/
+  content: "\f105"; /*←見出しアイコン*/
   color: #FAAFAA; /*←見出しアイコンの色*/
-  position: absolute;
-  left : 1em;
+  position: absolute;
+  left : 1em;
 }
  
 #markdown-toc ul li:last-child {
