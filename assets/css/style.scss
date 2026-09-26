@@ -18,14 +18,53 @@
 }
 
 .toc-box {
+  font-size: 1em;
+  padding: 1em 2em 2em;
+  background-color: #FCECEA; /*←背景色*/
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+  border: none;
+} 
 
-} //もくじに設定したクラス名あとで装飾
-
-.toc-label {
-  font-weight: bold;
-  font-size: 1.2em; // お好みで
+.toc-title {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #EE817B;  /*←タイトルの文字色*/
+  margin: 1em;
 }
 
-#markdown-toc {
+.toc-title::before {
+  font-family: FontAwesome;
+  content : "\f002"; /*←アイコン*/
+  font-size: 1.2em;
+  border-radius: 50%;
+  color: #FFF; /*←アイコンの色*/
+  background-color: #FAAFAA; /*←アイコンの背景色*/
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
 
+#markdown-toc ol {
+  position: relative;
+}
+ 
+#markdown-toc ol li {
+  padding: 1em 0 0 1em;
+  border-bottom: dotted 1px #FFB2AE  ;
+  list-style: none;
+}
+ 
+#markdown-toc a {
+  color: #928484 ; /*←見出しの文字色*/
+}
+ 
+#markdown-toc ol li::before {
+  font-family: FontAwesome;
+  content: "\f105"; /*←見出しアイコン*/
+  color: #FAAFAA; /*←見出しアイコンの色*/
+  position: absolute;
+  left : 1em;
+}
+ 
+#markdown-toc ol li::last-child {
+  border-bottom: none;
 }
