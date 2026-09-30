@@ -1,6 +1,4 @@
----
----
-@import "{{ site.theme }}";
+--- --- @import "{{ site.theme }}";
 
 //大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
 
@@ -20,27 +18,18 @@
 .toc-box {
   font-size: 1em;
   padding: 1em 2em 2em;
-  background-color: #FCECEA; /*←背景色*/
-  box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+  background-color: #FCECEA;
+  /*←背景色*/
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
 .toc-title {
   font-size: 1.2em;
-  font-weight: 500;
-  color: #EE817B; /*←タイトルの文字色*/
-  margin: 1em;
-}
-
-.toc-title::before {
-  font-family: FontAwesome;
-  content : "\f002"; /*←アイコン*/
-  font-size: 1.2em;
-  border-radius: 50%;
-  color: #FFF; /*←アイコンの色*/
-  background-color: #FAAFAA; /*←アイコンの背景色*/
-  padding: 0.5em;
-  margin-right: 0.5em;
+  font-weight: bold;
+  color: #EE817B;
+  /*←タイトルの文字色*/
+  margin: 0em;
 }
 
 #markdown-toc ul {
@@ -48,21 +37,39 @@
 }
 
 #markdown-toc li {
-  padding: 1em 0 0 1em;
+  font-weight: bold;
   border-bottom: dotted 1px #FFB2AE;
-  list-style: none;
+  font-size: 13px;
+}
+
+#markdown-toc li li {
+  font-weight: normal;
+  font-size: 13px;
+  position: relative;
 }
 
 #markdown-toc a {
-  color: #928484; /*←見出しの文字色*/
+  color: #928484;
+  /*←見出しの文字色*/
 }
 
 #markdown-toc ul li::before {
-  font-family: FontAwesome;
-  content: "\f105"; /*←見出しアイコン*/
-  color: #FAAFAA; /*←見出しアイコンの色*/
+  content: "";
   position: absolute;
-  left : 1em;
+
+  /* マイナス棒の「位置」の調整 */
+  left: -20px;
+  /* 💡文字の「左側」に飛び出させる距離（要微調整） */
+  top: 50%;
+  /* 上から50%の位置 */
+  transform: translateY(-50%);
+  /* 文字の上下の真ん中にぴったり合わせる */
+
+  /* マイナス棒の「形」の調整 */
+  width: 12px;
+  /* マイナス棒の長さ（横幅） */
+  border-top: solid 2px #666;
+  /* 線の厚み（太さ）・種類・色 */
 }
 
 #markdown-toc li:last-child {
