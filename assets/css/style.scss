@@ -1,4 +1,6 @@
---- --- @import "{{ site.theme }}";
+---
+---
+@import "{{ site.theme }}";
 
 //大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
 
