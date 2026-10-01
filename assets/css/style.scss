@@ -18,16 +18,18 @@
 }
 
 .toc-box {
-  font-size: 1em;
-  padding: 1em 2em 2em;
+  font-size: 1.2em;
+  padding: 1em 1em 1em;
   background-color: #FCECEA;
   /*←背景色*/
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   border: none;
+  max-width: 500px;
+  margin: 0 auto;//0 auto 0 autoのこと上下は0px左右は余った文を自動で半分にして振り分けてくれる。つまり最大500と設定してるので、ブラウザがそれより大きい場合500より余った幅を二つに割って左右に空白として入れてくれるのでちょうど真ん中に来る
 }
 
 .toc-title {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #EE817B;
   /*←タイトルの文字色*/
@@ -48,6 +50,7 @@
   font-weight: normal;
   font-size: 13px;
   position: relative;
+  list-style: none;
 }
 
 #markdown-toc a {
@@ -68,9 +71,9 @@
   /* 文字の上下の真ん中にぴったり合わせる */
 
   /* マイナス棒の「形」の調整 */
-  width: 12px;
+  width: 10px;
   /* マイナス棒の長さ（横幅） */
-  border-top: solid 2px #666;
+  border-top: solid 1px #666;
   /* 線の厚み（太さ）・種類・色 */
 }
 
