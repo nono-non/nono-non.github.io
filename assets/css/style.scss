@@ -60,6 +60,10 @@
   justify-content: space-between;
 }
 
+.post-navigation a {
+  color: #928484;  /*←見出しの文字色*/
+}
+
 .date-navigation{
   display: flex;
   justify-content: flex-end;
