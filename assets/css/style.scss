@@ -52,12 +52,12 @@
 #markdown-toc li {
   font-weight: bold;
   border-bottom: dotted 1px #FFB2AE;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 #markdown-toc li li {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 16px;
   position: relative;
   list-style: none;
 }
@@ -80,9 +80,9 @@
   /* 文字の上下の真ん中にぴったり合わせる */
 
   /* マイナス棒の「形」の調整 */
-  width: 10px;
+  width: 7px;
   /* マイナス棒の長さ（横幅） */
-  border-top: solid 1px #666;
+  border-top: solid 1px #928484;
   /* 線の厚み（太さ）・種類・色 */
 }
 
