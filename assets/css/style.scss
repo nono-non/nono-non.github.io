@@ -59,8 +59,7 @@
 .toc-title {
   font-size: 1.5em;
   font-weight: bold;
-  color: #EE817B;
-  /*←タイトルの文字色*/
+  color: #EE817B; /*←タイトルの文字色*/
   margin: 0em;
   padding: 0em;
 }
@@ -73,6 +72,7 @@
   font-weight: bold;
   border-bottom: dotted 1px #FFB2AE;
   font-size: 16px;
+  color: #928484;  /*←見出しの文字色*/
 }
 
 #markdown-toc li li {
@@ -82,28 +82,14 @@
   list-style: none;
 }
 
-#markdown-toc a {
-  color: #928484;
-  /*←見出しの文字色*/
-}
-
 #markdown-toc ul li::before {
   content: "";
-  position: absolute;
-
-  /* マイナス棒の「位置」の調整 */
-  left: -20px;
-  /* 💡文字の「左側」に飛び出させる距離（要微調整） */
-  top: 50%;
-  /* 上から50%の位置 */
-  transform: translateY(-50%);
-  /* 文字の上下の真ん中にぴったり合わせる */
-
-  /* マイナス棒の「形」の調整 */
-  width: 8px;
-  /* マイナス棒の長さ（横幅） */
-  border-top: solid 1px #928484;
-  /* 線の厚み（太さ）・種類・色 */
+  position: absolute; /* マイナス棒の「位置」の調整 */
+  left: -20px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
+  top: 50%; /* 上から50%の位置 */
+  transform: translateY(-50%);  /* 文字の上下の真ん中にぴったり合わせる */
+  width: 8px; /* マイナス棒の長さ（横幅） */
+  border-top: solid 1px #928484;  /* 線の厚み（太さ）・種類・色 */
 }
 
 #markdown-toc li:last-child {
