@@ -4,6 +4,20 @@
 
 //大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
 
+.project-name {
+  /* タイトル文字(h1)のスタイル */
+}
+
+.project-tagline {
+  /* 説明文(h2)のスタイル */
+}
+
+.page-header {
+  /* 帯全体の背景色など */
+  background: #ffdeca;
+  padding: 1rem 1rem;
+}
+
 .main-content p {
   margin-bottom: 2.5em;
 }
