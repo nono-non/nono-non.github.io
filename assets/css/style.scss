@@ -8,14 +8,30 @@
   margin-bottom: 2.5em;
 }
 
-.main-content h2 {
+.main-content h1 {
   font-size: 25px;
+  color: #928484;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 1em;
+}
+
+.main-content h2 {
+  font-size: 23px;
   color: #928484;
   font-weight: bold;
   padding: 10px 30px;
   margin-bottom: 1em;
   border-radius: 10px;
   background: #ffdeca;
+}
+
+.main-content h3 {
+  font-size: 25px;
+  color: #928484;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 1em;
 }
 
 .post-navigation {
