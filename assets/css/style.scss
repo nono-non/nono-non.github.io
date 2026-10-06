@@ -61,7 +61,11 @@
 }
 
 .post-navigation a {
-  color: #928484;  /*←見出しの文字色*/
+  color: #928484;  /*前次の記事の文字色*/
+}
+
+.top-navigationa a {
+  color: #928484; /*トップへ戻るの文字色*/
 }
 
 .date-navigation{
