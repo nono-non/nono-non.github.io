@@ -57,7 +57,7 @@
 }
 
 .toc-box p {
-  margin: 0;  /* spanを囲んでるpタグの余白をリセット */
+  margin: 0.2em;  /* spanを囲んでるpタグの余白をリセット */
 }
 
 .toc-title {
@@ -76,6 +76,9 @@
   font-weight: bold;
   border-bottom: dotted 1px #FFB2AE;
   font-size: 16px;
+}
+
+#markdown-toc a {
   color: #928484;  /*←見出しの文字色*/
 }
 
