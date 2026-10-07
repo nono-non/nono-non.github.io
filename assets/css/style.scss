@@ -178,7 +178,7 @@
   flex-basis: 75%;
   display: flex;
   flex-direction: column;/*ここでflexの横向きからblockの縦向きにしてくれる*/
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .blog-card-info p {
