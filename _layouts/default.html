@@ -26,7 +26,11 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
       {% if page.layout == "post" %}
-      
+        <div class="pankuzu">
+          <a href="{{ '/' | relative_url }}">トップページ</a>
+          <span> ＞ </span>
+          <a href="{{ '/blog.html' | relative_url }}">ブログ一覧</a>
+        </div>
       {% endif %}
     </header>
 
