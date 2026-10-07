@@ -160,6 +160,7 @@
 
 .blog-card a {
   display: flex;
+  text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
 }/*blog-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
 
 .blog-card-image {
