@@ -13,7 +13,34 @@
   padding-bottom: 0rem;
 }
 
+.site-footer {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /*defaoult.htmlの装飾*/
+.pankuzu{
+  display: flex;
+  background: #f5f5f5;
+  justify-content: center; /* 水平方向（主軸）の中央揃え */
+  align-items: center;     /* 垂直方向（交差軸）の中央揃え */
+  height: 40px;
+  color: #928484;
+  font-size: 0.8em;
+}
+
+.pankuzu span {
+  margin: 0 0 0 10px;
+}
+
+.pankuzu a {
+  color: #928484;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+}
+
 .project-name {
   /* タイトル文字(h1)のスタイル */
 }
@@ -27,6 +54,21 @@
 
 .site-footer-credits a{
   color: #928484; /*githubpagesリンクの文字色*/
+}
+
+.top-navigation {
+  background: #ffdeca;
+}
+
+.top-navigation a {
+  color: #928484; /*文字色*/
+  font-size: 1.3em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;      /* 縦の中央 */
+  justify-content: center;  /* 横の中央 */
+  height: 50px;
+  text-decoration: none;
 }
 
 /*通常使うpやh1などの装飾*/
@@ -64,28 +106,6 @@
 }
 
 /*post.htmlの装飾*/
-.pankuzu{
-  display: flex;
-  background: #f5f5f5;
-  justify-content: center; /* 水平方向（主軸）の中央揃え */
-  align-items: center;     /* 垂直方向（交差軸）の中央揃え */
-  height: 40px;
-  color: #928484;
-  font-size: 0.8em;
-}
-
-.pankuzu span {
-  margin: 0 0 0 10px;
-}
-
-.pankuzu a {
-  color: #928484;
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin: 0 0 0 10px;
-}
-
 .date-navigation{
   display: flex;
   justify-content: flex-end;
@@ -98,21 +118,6 @@
 
 .post-navigation a {
   color: #928484;  /*前次記事の文字色*/
-}
-
-.top-navigation {
-  background: #ffdeca;
-}
-
-.top-navigation a {
-  color: #928484; /*文字色*/
-  font-size: 1.3em;
-  font-weight: bold;
-  display: flex;
-  align-items: center;      /* 縦の中央 */
-  justify-content: center;  /* 横の中央 */
-  height: 50px;
-  text-decoration: none;
 }
 
 /*index.mdの全体装飾*/
