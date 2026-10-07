@@ -13,7 +13,7 @@ title: "ブログ一覧"
       <img src="{{ post.image }}">
     </div>
     <div class="blog-card-info">
-      <span class="blog-card-title">{{ post.title }}</span>
+      <div class="blog-card-title">{{ post.title }}</div>
       <p>{{ post.date | date: "%Y年%m月%d日" }}</p>
     </div>
   </a>
