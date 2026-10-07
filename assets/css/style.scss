@@ -78,14 +78,16 @@
 
 .top-navigation {
   background: #ffdeca;
-  text-align: center;
-  height: 50px;
 }
 
 .top-navigation a {
   color: #928484; /*文字色*/
   font-size: 1.3em;
   font-weight: bold;
+  display: flex;
+  align-items: center;      /* 縦の中央 */
+  justify-content: center;  /* 横の中央 */
+  height: 50px;   
 }
 
 /*index.mdの全体装飾*/
