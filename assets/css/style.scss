@@ -10,8 +10,12 @@ padding-right: 0 !important;
 }
 
 .site-footer {
-padding-left: 0 !important;
-padding-right: 0 !important;
+  max-width: 100% !important; /* 横幅の制限を解除 */
+  width: 100% !important;     /* 画面いっぱいに広げる */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /*defaoult.htmlの装飾*/
