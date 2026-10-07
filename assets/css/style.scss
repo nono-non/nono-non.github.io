@@ -4,6 +4,7 @@
 
 //大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
 
+/*defaoult.htmlの装飾*/
 .project-name {
   /* タイトル文字(h1)のスタイル */
 }
@@ -22,6 +23,11 @@
   padding-bottom: 0rem;
 }
 
+.site-footer-credits a{
+  color: #928484; /*githubpagesリンクの文字色*/
+}
+
+/*通常使うpやh1などの装飾*/
 .main-content p {
   margin-bottom: 2.5em;
 }
@@ -55,37 +61,37 @@
   border-left: 10px solid #ffdeca;
 }
 
+/*post.htmlの装飾*/
+.date-navigation{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .post-navigation {
   display: flex;
   justify-content: space-between;
 }
 
 .post-navigation a {
-  color: #928484;  /*前次の記事の文字色*/
-}
-
-.top-page a {
-  color: #928484;  /*トップページのリンクの色*/
+  color: #928484;  /*前次記事の文字色*/
 }
 
 .top-navigation a {
-  color: #928484; /*トップへ戻るの文字色*/
+  color: #928484; /*文字色*/
   font-size: 0.9em;
 }
 
-.site-footer-credits a{
-  color: #928484; /*githubpagesリンクの文字色*/
+/*index.mdの全体装飾*/
+.top-page a {
+  color: #928484;  
 }
 
-.date-navigation{
-  display: flex;
-  justify-content: flex-end;
-}
-
+/*postsフォルダのmdファイルの装飾*/
 .small-text {
   font-size: 85%;
 }
 
+/*もくじの装飾*/
 .toc-box {
   font-size: 1.2em;
   padding: 0.8em 0.8em 0.8em 0.8em;
@@ -141,4 +147,26 @@
 
 #markdown-toc li:last-child {
   border-bottom: none;
+}
+/*blog.mdの装飾*/
+/*ブログカードの装飾*/
+.blog-card {
+  display: flex;
+  width: 100%;
+}
+
+.blog-card-image {
+  width: 33%;
+}
+
+.blog-card-info {
+  width: 67%;
+  display: flex;
+  flex-direction: column;/*ここでflexの横向きからblockの縦向きにしてくれる*/
+  justify-content: space-between;
+}
+
+.blog-card-info p {
+  text-align: right;
+  font-size: 10px;
 }
