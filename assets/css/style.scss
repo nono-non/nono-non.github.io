@@ -151,6 +151,7 @@
 /*blog.mdの装飾*/
 /*ブログカードの装飾*/
 .blog-card {
+  height: 50px; /* 好きな高さに */
   background: #f5f5f5;
   margin-bottom: 16px;
   border-radius: 8px;         /* 角を丸くする */
@@ -160,6 +161,7 @@
 
 .blog-card a {
   display: flex;
+  height: 100%; /* カードの高さに合わせる */
   text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
 }/*blog-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
 
@@ -195,4 +197,8 @@
   font-weight: bold;
   font-size: 17px;
   margin: 0px 7px 0px 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* 2行まで表示 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
