@@ -65,9 +65,11 @@
 .pankuzu{
   display: flex;
   background: #f5f5f5;
-  align-items: center;      /* 縦の中央 */
-  justify-content: center;  /* 横の中央 */
-  height: 50px;
+  height: 40px;
+  color: #928484;
+}
+
+.pankuzu a {
   text-decoration: none;
 }
 
