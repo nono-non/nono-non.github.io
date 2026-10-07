@@ -5,17 +5,12 @@
 //大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
 
 .page-header {
+  /* 帯全体の背景色など */
   padding-left: 0 !important;
   padding-right: 0 !important;
-}
-
-.site-footer {
-  max-width: 100% !important; /* 横幅の制限を解除 */
-  width: 100% !important;     /* 画面いっぱいに広げる */
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  background: #ffdeca;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
 }
 
 /*defaoult.htmlの装飾*/
@@ -28,13 +23,6 @@
   color: #ffdeca;
   padding:0em;
   margin:0em;
-}
-
-.page-header {
-  /* 帯全体の背景色など */
-  background: #ffdeca;
-  padding-top: 1rem;
-  padding-bottom: 0rem;
 }
 
 .site-footer-credits a{
