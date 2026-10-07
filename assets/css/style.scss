@@ -5,8 +5,8 @@
 //大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
 
 .page-header {
-padding-left: 0 !important;
-padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .site-footer {
@@ -83,11 +83,10 @@ padding-right: 0 !important;
   height: 40px;
   color: #928484;
   font-size: 0.8em;
-  margin: 0 0 0 7px;
 }
 
 .pankuzu span {
-  margin: 0px 10px;
+  margin: 0 0 0 10px;
 }
 
 .pankuzu a {
@@ -95,6 +94,7 @@ padding-right: 0 !important;
   text-decoration: none;
   font-size: 1.1em;
   font-weight: bold;
+  margin: 0 0 0 10px;
 }
 
 .date-navigation{
