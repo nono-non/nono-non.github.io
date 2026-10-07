@@ -152,15 +152,12 @@
 /*ブログカードの装飾*/
 .blog-card {
   display: flex;
-  width: 100%;
 }
 
 .blog-card-image {
-  width: 33%;
 }
 
 .blog-card-info {
-  width: 67%;
   display: flex;
   flex-direction: column;/*ここでflexの横向きからblockの縦向きにしてくれる*/
   justify-content: space-between;
@@ -172,5 +169,5 @@
 }
 
 .blog-card a {
-  display: block;
+  display: block;/*aタグはリンクの範囲を表す、それを普通の文章中の小さなリンクではなく、カードの中いっぱいに広がれるブロックとして扱ってねと言う指示、blockは縦並びにもできるが基本は箱にしてねと言うおおもとの概念がある*/
 }
