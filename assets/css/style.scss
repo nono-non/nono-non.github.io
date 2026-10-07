@@ -152,7 +152,7 @@
 /*ブログカードの装飾*/
 .blog-card a {
   display: flex;
-}/*log-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
+}/*blog-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
 
 .blog-card-image {
   flex-basis:30%;
@@ -168,8 +168,4 @@
 .blog-card-info p {
   text-align: right;
   font-size: 13px;
-}
-
-.blog-card a {
-  display: block;/*aタグはリンクの範囲を表す、それを普通の文章中の小さなリンクではなく、カードの中いっぱいに広がれるブロックとして扱ってねと言う指示、blockは縦並びにもできるが基本は箱にしてねと言うおおもとの概念がある*/
 }
