@@ -62,6 +62,15 @@
 }
 
 /*post.htmlの装飾*/
+.pankuzu{
+  display: flex;
+  background: #f5f5f5;
+  align-items: center;      /* 縦の中央 */
+  justify-content: center;  /* 横の中央 */
+  height: 50px;
+  text-decoration: none;
+}
+
 .date-navigation{
   display: flex;
   justify-content: flex-end;
