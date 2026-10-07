@@ -161,6 +161,13 @@
   flex-basis:25%;
 }
 
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 縦横比を保ったまま枠を埋める（はみ出た部分はトリミング） */
+  display: block;    /* 画像の下にできる余白を消す */
+}
+
 .blog-card-info {
   background: #ffdeca;
   flex-basis: 75%;
