@@ -187,10 +187,9 @@
   font-weight: bold;
   text-align: right;
   font-size: 13px;
-  margin: 0em;
-  padding: 0em;
+  margin: 0 0 8px; /* 下に8pxだけ余白 */
 }
 
 .blog-card-info h3 {
-  margin: 0 0 8px; /* 下に8pxだけ余白 */
+  margin: 0 0 0px; /* 下に8pxだけ余白 */
 }
