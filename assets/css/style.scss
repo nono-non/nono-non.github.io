@@ -28,6 +28,10 @@
 }
 
 /*通常使うpやh1などの装飾*/
+.main-content {
+  padding-top: 0;
+}
+
 .main-content p {
   margin-bottom: 2.5em;
 }
@@ -73,7 +77,6 @@
 
 .pankuzu span {
   margin: 0px 10px;
-  align-items: center;
 }
 
 .pankuzu a {
