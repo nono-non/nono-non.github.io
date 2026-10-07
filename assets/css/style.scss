@@ -151,7 +151,7 @@
 /*blog.mdの装飾*/
 /*ブログカードの装飾*/
 .blog-card {
-  height: 100px; /* 好きな高さに */
+  height: 90px; /* 好きな高さに */
   background: #f5f5f5;
   margin-bottom: 16px;
   border-radius: 8px;         /* 角を丸くする */
@@ -180,7 +180,7 @@
   flex-basis: 75%;
   display: flex;
   flex-direction: column;/*ここでflexの横向きからblockの縦向きにしてくれる*/
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 5px; /* 上の余白を内側に作る */
 }
 
