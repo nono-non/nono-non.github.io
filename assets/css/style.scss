@@ -166,7 +166,7 @@
 }/*blog-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
 
 .blog-card-image {
-  flex-basis:25%;
+  flex-basis:28%;
 }
 
 .blog-card-image img {
@@ -177,11 +177,11 @@
 }
 
 .blog-card-info {
-  flex-basis: 75%;
+  flex-basis: 72%;
   display: flex;
   flex-direction: column;/*ここでflexの横向きからblockの縦向きにしてくれる*/
   justify-content: space-between;
-  padding-top: 5px; /* 上の余白を内側に作る */
+  padding-top: 7px; /* 上の余白を内側に作る */
 }
 
 .blog-card-info p {
