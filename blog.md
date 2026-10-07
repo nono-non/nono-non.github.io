@@ -17,6 +17,7 @@ title: "ブログ一覧"
     <h1>{{ post.title }}</h1>
     <p>{{ post.date | date: "%Y年%m月%d日" }}</p>
   </div>
+  
 </a>
 
 {% endfor %}
