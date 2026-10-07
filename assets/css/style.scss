@@ -150,14 +150,16 @@
 }
 /*blog.mdの装飾*/
 /*ブログカードの装飾*/
-.blog-card a{
+.blog-card a {
   display: flex;
 }/*log-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
 
 .blog-card-image {
+  flex-basis:30%;
 }
 
 .blog-card-info {
+  flex-basis: 70%;
   display: flex;
   flex-direction: column;/*ここでflexの横向きからblockの縦向きにしてくれる*/
   justify-content: space-between;
