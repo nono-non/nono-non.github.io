@@ -153,6 +153,8 @@
 .blog-card {
   height: 90px; /* 好きな高さに */
   background: #f5f5f5;
+  padding: 7px;        /* 枠の太さ */
+  box-sizing: border-box; /* paddingを含めて高さ固定にする */
   margin-bottom: 16px;
   border-radius: 8px;         /* 角を丸くする */
   overflow: hidden;           /* 丸めた角から画像や背景がはみ出さないようにする */
@@ -167,6 +169,7 @@
 
 .blog-card-image {
   flex-basis:28%;
+  margin-right: 7px;
 }
 
 .blog-card-image img {
