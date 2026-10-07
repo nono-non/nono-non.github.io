@@ -151,6 +151,11 @@
 /*blog.mdの装飾*/
 /*ブログカードの装飾*/
 .blog-card {
+  margin-bottom: 16px;
+  border: 1px solid #e0c4b0;  /* 枠線 */
+  border-radius: 8px;         /* 角を丸くする */
+  overflow: hidden;           /* 丸めた角から画像や背景がはみ出さないようにする */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* 影 */
 }
 
 .blog-card a {
