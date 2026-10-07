@@ -67,7 +67,8 @@
 .pankuzu{
   display: flex;
   background: #f5f5f5;
-  align-items: center;
+  justify-content: center; /* 水平方向（主軸）の中央揃え */
+  align-items: center;     /* 垂直方向（交差軸）の中央揃え */
   height: 40px;
   color: #928484;
   font-size: 0.8em;
