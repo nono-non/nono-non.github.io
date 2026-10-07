@@ -156,6 +156,7 @@
 
 .blog-card a {
   display: flex;
+  background: #ffdeca;
 }/*blog-cardに入ってる子はaだけ、aの中にdiv二つの子要素が入ってるここではdiv二つをflexに横並びにするよう指定してる*/
 
 .blog-card-image {
