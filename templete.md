@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "❶タイトル書く"
-date: ❷日付書く2026-07-30
+date: ❷日付書く2026-07-
+image: ❸ブログカードに載せたい画像ここに/images/colopl.jpg
 tags:
  - ❸将来のタグを書く
 ---

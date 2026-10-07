@@ -10,7 +10,7 @@ title: "ブログ一覧"
 <a href="{{ post.url }}" class="blog-card">
 
   <div class="blog-card-image">
-    <img src="ここに画像のURL">
+    <img src="{{ post.image }}">
   </div>
 
   <div class="blog-card-info">
