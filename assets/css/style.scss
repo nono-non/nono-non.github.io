@@ -58,17 +58,15 @@
 }
 
 .top-navigation {
-  background: #ffdeca;
+  display: flex;
+  align-items: center;      /* 縦の中央 */
+  justify-content: center;  /* 横の中央 */
 }
 
 .top-navigation a {
   color: #928484; /*文字色*/
-  font-size: 1.3em;
+  font-size: 0.8em;
   font-weight: bold;
-  display: flex;
-  align-items: center;      /* 縦の中央 */
-  justify-content: center;  /* 横の中央 */
-  height: 50px;
   text-decoration: none;
 }
 
