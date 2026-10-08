@@ -60,12 +60,15 @@
 }
 
 .top-navigation a {
-  display: block;
   color: #928484; /*文字色*/
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
   margin: 1em;
+}
+
+.top-navigation a:first-child {
+  margin-top: 1em;/*一番最初の子要素だけcaymanの方でmargin-topが0になってしまうのでそれを修正*/
 }
 
 /*通常使うpやh1などの装飾*/
