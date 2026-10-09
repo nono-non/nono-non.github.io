@@ -3,7 +3,7 @@ layout: default
 title: "ブログ一覧"
 ---
 
-## ブログ
+## ブログ一覧
 
 {% for post in site.posts %}
 
@@ -20,11 +20,3 @@ title: "ブログ一覧"
 </div>
 
 {% endfor %}
-
-### カテゴリー別
-[トップページへ戻る](../index.html)
-
-
-
-
-
