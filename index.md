@@ -5,18 +5,15 @@ paginate: true
 ---
 
 {% if paginator.page == 1 %}
+<div class="top-page">
+  <h2>ブログ</h2>
+  <a href="{{ '/blog.html' | relative_url }}">ブログ</a>
 
-<div class="top-page" markdown="1">
-
-## ブログ
-[ブログ](blog.html)
-
-## プログラムで作ったもの
-1. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)
-
+  <h2>プログラムで作ったもの</h2>
+  <a href="https://nono-non.github.io/DinosaurGame/dino.html">恐竜ゲーム</a>
 </div>
 
-## 新着記事
+<h2>新着記事</h2>
 {% endif %}
 
 {% for post in paginator.posts %}
