@@ -5,9 +5,6 @@ title: "ふぇりーちぇ"
 
 <div class="top-page" markdown="1">
 
-## 自己紹介
-[自己紹介](selfintroduction.html)
-
 ## ブログ
 [ブログ](blog.html)
 
