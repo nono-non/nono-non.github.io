@@ -3,7 +3,7 @@ layout: default
 title: "ブログ一覧"
 ---
 
-## ブログ一覧
+## 株日記のブログ一覧
 
 {% for post in site.posts %}
 
