@@ -1,6 +1,6 @@
 title: "ふぇりーちぇ"
 description: "試行錯誤中"
 theme: jekyll-theme-cayman
-paginate: 10
+paginate: 5
 paginate_path: "/page:num/"
 
