@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "ふぇりーちぇ"
+paginate: true
 ---
 
 <div class="top-page" markdown="1">
