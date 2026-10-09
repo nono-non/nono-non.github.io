@@ -15,11 +15,10 @@ paginate: true
 1. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)
 
 </div>
-
+## 新着記事
 {% endif %}
 
-## 新着記事
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 
 <div class="blog-card">
   <a href="{{ post.url }}">
@@ -34,3 +33,4 @@ paginate: true
 </div>
 
 {% endfor %}
+
