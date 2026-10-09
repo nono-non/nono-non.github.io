@@ -4,6 +4,8 @@ title: "ふぇりーちぇ"
 paginate: true
 ---
 
+{% if paginator.page == 1 %}
+
 <div class="top-page" markdown="1">
 
 ## ブログ
@@ -13,6 +15,8 @@ paginate: true
 1. [恐竜ゲーム](https://nono-non.github.io/DinosaurGame/dino.html)
 
 </div>
+
+{% endif %}
 
 ## 新着記事
 {% for post in site.posts %}
