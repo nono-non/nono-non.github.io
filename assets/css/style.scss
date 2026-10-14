@@ -111,8 +111,7 @@
 .pankuzu a {
   text-decoration: none;
   margin: 0 0 0 8px;
-  color: #928484;
-  font-size: 0.7em;
+  color: inherit; /* ★「親要素の色をそのまま受け継いでね」という意味の便利な指定 */
 }
 
 .date-navigation{
