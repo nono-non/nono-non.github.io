@@ -14,7 +14,7 @@
 }
 
 /*defaoult.htmlの装飾*/
-.pankuzu{
+.global-nav {
   display: flex;
   background: #f5f5f5;
   justify-content: center; /* 水平方向（主軸）の中央揃え */
@@ -23,7 +23,7 @@
   padding: 0 8px 0 0px;
 }
 
-.pankuzu a {
+.global-nav a {
   color: #928484;
   text-decoration: none;
   font-size: 0.9em;
@@ -101,6 +101,24 @@
 }
 
 /*post.htmlの装飾*/
+.pankuzu{
+  display: flex;
+  background: #f5f5f5;
+  padding: 0 8px 0 0px;
+}
+
+.pankuzu span{
+  color: #928484;
+  font-size: 0.6em;
+}
+
+.pankuzu a {
+  color: #928484;
+  text-decoration: none;
+  font-size: 0.6em;
+  margin: 0 0 0 8px;
+}
+
 .date-navigation{
   display: flex;
   justify-content: flex-end;
