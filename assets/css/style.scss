@@ -194,7 +194,6 @@
 
 /*もくじの装飾*/
 .toc-box {
-  font-size: 1.2em;
   padding: 0.8em 0.8em 0.8em 0.8em;
   background-color: #FCECEA;  /*←背景色*/
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
@@ -208,7 +207,7 @@
 }
 
 .toc-title {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   color: #EE817B; /*←タイトルの文字色*/
   margin: 0em;
@@ -222,7 +221,7 @@
 #markdown-toc li {
   font-weight: bold;
   border-bottom: dotted 1px #FFB2AE;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #markdown-toc a {
@@ -231,7 +230,7 @@
 
 #markdown-toc li li {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
   position: relative;
   list-style: none;
 }
