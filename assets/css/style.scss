@@ -129,9 +129,9 @@
   flex:1;
   height: 160px; /* 好きな高さに */
   background: #f5f5f5;
-  padding: 7px 7px 5px;        /* 枠の太さ */
+  padding: 7px 7px 7px;        /* 枠の太さ */
   box-sizing: border-box; /* paddingを含めて高さ固定にする */
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   border-radius: 10px;         /* 角を丸くする */
   overflow: hidden;           /* 丸めた角から画像や背景がはみ出さないようにする */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* 影 */
