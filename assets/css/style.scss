@@ -140,7 +140,7 @@
 }
 
 .category-card-image {
-  flex: 1;  /* ★ポイント3: 文字のスペースを除いた残りの高さを画像に割り当てる */
+  flex: 1;  /* 余ったスペースを全部使ってOK */
   overflow: hidden;
 }
 
@@ -156,7 +156,7 @@
   font-weight: bold;
   font-size: 17px;
   margin: 0px 4px 0px 10px;
-  flex-shrink: 0; /* ポイント4: 文字が潰れないようにする */
+  flex-shrink: 0; /* 他の要素に押されても、絶対に自分のサイズを縮めない */
 }
 
 
