@@ -214,10 +214,13 @@
   padding: 0em;
 }
 
-#markdown-toc ul {
-  position: relative;
+#markdown-toc {//これ自信がulを指してる
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+#markdown-toc ul {
+  position: relative;
 }
 
 #markdown-toc li {
