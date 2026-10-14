@@ -122,7 +122,7 @@
 
 /*index.mdの全体装飾*/
 .category-card {
-  height: 95px; /* 好きな高さに */
+  height: 140px; /* 好きな高さに */
   background: #f5f5f5;
   padding: 7px;        /* 枠の太さ */
   box-sizing: border-box; /* paddingを含めて高さ固定にする */
@@ -133,13 +133,13 @@
 }
 
 .category-card a {
-  display: flex;
+  display: block;
   height: 100%; /* カードの高さに合わせる */
   text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
 }
 
 .category-card-image {
-  flex-basis:28%;
+  block-basis:70%;
 }
 
 .category-card-image img {
