@@ -133,9 +133,15 @@
 }
 
 .category-card a {
+  display: flex; /*フレックスボックスにして中身を縦に並べる */
+  flex-direction: column;
   height: 100%; /* リンクの判定エリアをカードの高さいっぱいにしてるどこ推してもリンクに飛ぶ */
-  display: block;
   text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
+}
+
+.category-card-image {
+  flex: 1;  /* ★ポイント3: 文字のスペースを除いた残りの高さを画像に割り当てる */
+  overflow: hidden;
 }
 
 .category-card-image img {
@@ -150,6 +156,7 @@
   font-weight: bold;
   font-size: 17px;
   margin: 0px 4px 0px 10px;
+  flex-shrink: 0; /* ポイント4: 文字が潰れないようにする */
 }
 
 
