@@ -133,13 +133,8 @@
 }
 
 .category-card a {
-  display: block;
   height: 100%; /* カードの高さに合わせる */
   text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
-}
-
-.category-card-image {
-  block-basis:70%;
 }
 
 .category-card-image img {
@@ -154,10 +149,6 @@
   font-weight: bold;
   font-size: 17px;
   margin: 0px 4px 0px 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* 2行まで表示 */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 
