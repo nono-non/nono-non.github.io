@@ -121,6 +121,10 @@
 }
 
 /*index.mdの全体装飾*/
+.category-card-box {
+  display: flex;
+}
+
 .category-card {
   height: 150px; /* 好きな高さに */
   background: #f5f5f5;
