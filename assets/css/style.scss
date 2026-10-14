@@ -194,6 +194,7 @@
 
 /*もくじの装飾*/
 .toc-box {
+  padding: 0.5em;
   background-color: #FCECEA;  /*←背景色*/
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   border: none;
@@ -214,13 +215,8 @@
 }
 
 #markdown-toc ul {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-
-#markdown-toc ul {
   position: relative;
+  margin-bottom: 0;
 }
 
 #markdown-toc li {
