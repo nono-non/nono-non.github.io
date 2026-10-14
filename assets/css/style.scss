@@ -76,12 +76,12 @@
   font-size: 26px;
   color: #928484;
   font-weight: bold;
-  padding: 1px 15px;
+  padding: 5px 15px;
   margin: 1px;
 }
 
 .main-content h2 {
-  font-size: 23px;
+  font-size: 20px;
   color: #928484;
   font-weight: bold;
   padding: 10px 30px;
@@ -123,6 +123,8 @@
 .date-navigation{
   display: flex;
   justify-content: flex-end;
+  margin-bottom:0px;
+  padding-bottom: 0px;
 }
 
 .post-navigation {
