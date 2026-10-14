@@ -134,6 +134,7 @@
 
 .category-card a {
   height: 100%; /* リンクの判定エリアをカードの高さいっぱいにしてるどこ推してもリンクに飛ぶ */
+  display: block;
   text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
 }
 
