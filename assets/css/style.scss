@@ -120,9 +120,12 @@
   color: inherit; /* ★「親要素の色をそのまま受け継いでね」という意味の便利な指定 */
 }
 
-.date-navigation{
+.date-nav{
   display: flex;
   justify-content: flex-end;
+}
+
+.date-nav p {
   margin-bottom:0px;
   padding-bottom: 0px;
 }
@@ -132,7 +135,7 @@
   justify-content: space-between;
 }
 
-.post-navigation a {
+.post-nav a {
   color: #928484;  /*前次記事の文字色*/
 }
 
