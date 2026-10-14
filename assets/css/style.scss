@@ -216,7 +216,7 @@
 
 #markdown-toc {//これ自信がulを指してる
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 2px;
 }
 
 #markdown-toc ul {
@@ -225,7 +225,7 @@
 
 #markdown-toc li {
   font-weight: bold;
-  border-bottom: dotted 1px #FFB2AE;
+  /*border-bottom: dotted 1px #FFB2AE;*/
   font-size: 15px;
 }
 
