@@ -47,14 +47,14 @@
   color: #928484; /*githubpagesリンクの文字色*/
 }
 
-.top-navigation {
+.footer-nav {
   display: flex;
   align-items: center;      /* 縦の中央 */
   justify-content: center;  /* 横の中央 */
   margin-bottom: 2em;
 }
 
-.top-navigation a {
+.footer-nav a {
   color: #928484; /*文字色*/
   font-size: 1em;
   font-weight: bold;
@@ -62,7 +62,7 @@
   margin: 1em;
 }
 
-.top-navigation a:first-child {
+.footer-nav a:first-child {
   margin-top: 1em;/*一番最初の子要素だけcaymanの方でmargin-topが0になってしまうのでそれを修正*/
 }
 
@@ -107,7 +107,6 @@
   color: #928484;
   font-size: 0.8em;
   justify-content: center; /* 水平方向（主軸）の中央揃え */
-  align-items: center; 
 }
 
 .pankuzu a {
