@@ -135,13 +135,14 @@
   padding-bottom: 0px;
 }
 
-.post-nav {
-  display: flex;
-  justify-content: space-between;
+.post-nav-prev a {
+  color: #928484;  /*前次記事の文字色*/
+  text-align: left;
 }
 
-.post-nav a {
+.post-nav-next a {
   color: #928484;  /*前次記事の文字色*/
+  text-align: right;
 }
 
 /*index.mdの全体装飾*/
