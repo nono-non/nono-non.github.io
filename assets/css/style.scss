@@ -227,6 +227,9 @@
 
 #markdown-toc ul {
   position: relative;
+  padding-left: 20px; /* デフォルトの広い余白を小さくする（初期値は約40pxなど） */
+}
+
 }
 
 #markdown-toc li {
@@ -248,7 +251,7 @@
 #markdown-toc ul li::before {
   content: "";
   position: absolute; /* マイナス棒の「位置」の調整 */
-  left: -15px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
+  left: -20px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
   top: 50%; /* 上から50%の位置 */
   transform: translateY(-50%);  /* 文字の上下の真ん中にぴったり合わせる */
   width: 8px; /* マイナス棒の長さ（横幅） */
