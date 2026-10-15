@@ -207,7 +207,7 @@
 }
 
 .toc-box p {
-  margin: 0.5em;  /* spanを囲んでるpタグの余白をリセット */
+  margin: 0em;  /* spanを囲んでるpタグの余白をリセット */
 }
 
 .toc-title {
@@ -221,8 +221,6 @@
 
 /*markdown-tocは子のulを指してる*/
 #markdown-toc {
-  padding-top: 0px;
-  margin-bottom: 9px;
   padding-left: 30px;
 }
 
