@@ -18,15 +18,6 @@ layout: default
 {{ content }}
 <hr>
 
-<div class="post-nav">
-  {% if page.previous %}
-    <a href="{{ page.previous.url }}">← 前の記事</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ page.next.url }}">次の記事 →</a>
-  {% endif %}
-</div>
-
 <div class="post-nav-cards">
 
   <!-- 前の記事がある場合 -->
@@ -37,13 +28,22 @@ layout: default
           <img src="{{ page.previous.image }}">
         </div>
         <div class="blog-card-info">
-          <p>← 前の記事</p>
+          <!-- 「前の記事：」などのラベルをつけたい場合はここに入れると親切です -->
           <div class="blog-card-title">{{ page.previous.title }}</div>
+          <p>{{ page.previous.date | date: "%Y年%m月%d日" }}</p>
         </div>
       </a>
     </div>
   {% endif %}
-
+  
+<div class="post-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← 前の記事</a>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url }}">次の記事 →</a>
+  {% endif %}
+</div>
   <!-- 次の記事がある場合 -->
   {% if page.next %}
     <div class="blog-card">
@@ -52,8 +52,8 @@ layout: default
           <img src="{{ page.next.image }}">
         </div>
         <div class="blog-card-info">
-          <p>次の記事 →</p>
           <div class="blog-card-title">{{ page.next.title }}</div>
+          <p>{{ page.next.date | date: "%Y年%m月%d日" }}</p>
         </div>
       </a>
     </div>
