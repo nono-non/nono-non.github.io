@@ -46,7 +46,7 @@ paginate: true
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="page-item disabled">&laquo; 前</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="page-item">&laquo;</a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}<!--1ページからgaginatorで作った全てのページのページ番号を1個ずつ取り出す-->
@@ -60,7 +60,7 @@ paginate: true
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="page-item disabled">次 &raquo;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}" class="page-item">&raquo;</a>
   {% endif %}
 </div>
 {% endif %}
