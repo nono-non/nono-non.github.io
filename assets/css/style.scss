@@ -10,7 +10,7 @@
   padding-right: 0 !important;
   background: #696969;
   padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
 }
 
 /*defaoult.htmlの装飾*/
@@ -21,6 +21,7 @@
   align-items: center;     /* 垂直方向（交差軸）の中央揃え */
   height: 40px;
   padding: 0 8px 0 0px;
+  margin-top: 1rem;
 }
 
 .global-nav a {
@@ -87,7 +88,7 @@
   padding: 10px 30px;
   margin-bottom: 1em;
   border-radius: 5px;
-  background: #696969;
+  background: #F5F5F5;
   text-align: left;
 }
 
@@ -98,7 +99,7 @@
   padding: 10px 30px;
   margin-bottom: 1em;
   text-align: left;
-  border-left: 10px solid #696969;
+  border-left: 10px solid #F5F5F5;
 }
 
 /*post.htmlの装飾*/
