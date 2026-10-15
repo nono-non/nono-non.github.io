@@ -216,7 +216,8 @@
 /*markdown-tocは子のulを指してる*/
 #markdown-toc {
   padding-left: 30px;
-  margin:5px;
+  margin-top:0px;
+  padding-top:0px;
 }
 
 #markdown-toc ul {
