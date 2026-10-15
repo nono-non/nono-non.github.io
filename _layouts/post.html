@@ -37,8 +37,8 @@ layout: default
           <img src="{{ page.previous.image }}">
         </div>
         <div class="blog-card-info">
-          <div class="blog-card-title"><<{{ page.previous.title }}</div>
-          <p>{{ page.previous.date | date: "%Y年%m月%d日" }}</p>
+          <p>← 前の記事</p>
+          <div class="blog-card-title">{{ page.previous.title }}</div>
         </div>
       </a>
     </div>
@@ -52,8 +52,8 @@ layout: default
           <img src="{{ page.next.image }}">
         </div>
         <div class="blog-card-info">
-          <div class="blog-card-title">{{ page.next.title }}>></div>
-          <p>{{ page.next.date | date: "%Y年%m月%d日" }}</p>
+          <p>次の記事 →</p>
+          <div class="blog-card-title">{{ page.next.title }}</div>
         </div>
       </a>
     </div>
