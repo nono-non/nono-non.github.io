@@ -30,10 +30,10 @@
   <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="current"{% endif %}>ホーム</a>
   
   <!-- 自作ゲーム：URLが「/category.html」または「/game/」などの配下にあるとき光らせる場合 -->
-  <a href="{{ '/category.html' | relative_url }}" {% if page.url == '/category.html' or page.url contains '/game/' %}class="current"{% endif %}>自作ゲーム</a>
+  <a href="{{ '/category.html' | relative_url }}" {% if page.url == '/category.html' %}class="current"{% endif %}>自作ゲーム</a>
   
   <!-- 株ブログ：URLが「/blog.html」のとき、または個別のブログ記事（例: /blog/...）のときにも光らせる -->
-  <a href="{{ '/blog.html' | relative_url }}" {% if page.url == '/blog.html' or page.url contains '/blog/' %}class="current"{% endif %}>株ブログ</a>
+  <a href="{{ '/blog.html' | relative_url }}" {% if page.url == '/blog.html' or page.url contains '/kabu/' %}class="current"{% endif %}>株ブログ</a>
 </div>
     </header>
 
