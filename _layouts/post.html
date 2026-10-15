@@ -18,45 +18,22 @@ layout: default
 {{ content }}
 <hr>
   
-
-
-<div class="post-nav-cards">
-
-  <!-- 前の記事がある場合 -->
-  {% if page.previous %}
-        <div class="post-nav-prev">← 前の記事
-</div>
-    <div class="blog-card">
-      <a href="{{ page.previous.url }}">
-        <div class="blog-card-image">
-          <img src="{{ page.previous.image }}">
-        </div>
-        <div class="blog-card-info">
-          <div class="blog-card-title">{{ page.previous.title }}</div>
-          <p>{{ page.previous.date | date: "%Y年%m月%d日" }}</p>
-        </div>
-      </a>
-    </div>
+<div class="post-navigation">
+  <!-- 前の記事（存在する場合） -->
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="nav-prev">&laquo; 前の記事</a>
+  {% else %}
+    <span class="nav-prev disabled">前の記事</span>
   {% endif %}
 
+  <!-- 記事一覧へ -->
+  <a href="{{ '/blog.html' | relative_url }}" class="nav-list">記事一覧へ</a>
 
-
-  <!-- 次の記事がある場合 -->
-  {% if page.next %}
-   <div class="post-nav-next">次の記事 →
-</div>
-    <div class="blog-card">
-      <a href="{{ page.next.url }}">
-        <div class="blog-card-image">
-          <img src="{{ page.next.image }}">
-        </div>
-        <div class="blog-card-info">
-          <div class="blog-card-title">{{ page.next.title }}</div>
-          <p>{{ page.next.date | date: "%Y年%m月%d日" }}</p>
-        </div>
-      </a>
-    </div>
+  <!-- 次の記事（存在する場合） -->
+  {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="nav-next">次の記事 &raquo;</a>
+  {% else %}
+    <span class="nav-next disabled">次の記事</span>
   {% endif %}
-
 </div>
 
