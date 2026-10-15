@@ -37,9 +37,7 @@ layout: default
           <img src="{{ page.previous.image }}">
         </div>
         <div class="blog-card-info">
-          <span style="font-size: 0.8em; color: #888;">← 前の記事</span>
-          <!-- 「前の記事：」などのラベルをつけたい場合はここに入れると親切です -->
-          <div class="blog-card-title">{{ page.previous.title }}</div>
+          <div class="blog-card-title"><<{{ page.previous.title }}</div>
           <p>{{ page.previous.date | date: "%Y年%m月%d日" }}</p>
         </div>
       </a>
@@ -54,8 +52,7 @@ layout: default
           <img src="{{ page.next.image }}">
         </div>
         <div class="blog-card-info">
-          <span style="font-size: 0.8em; color: #888;">← 前の記事</span>
-          <div class="blog-card-title">{{ page.next.title }}</div>
+          <div class="blog-card-title">{{ page.next.title }}>></div>
           <p>{{ page.next.date | date: "%Y年%m月%d日" }}</p>
         </div>
       </a>
