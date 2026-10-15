@@ -190,6 +190,50 @@
   flex-shrink: 0; /* 他の要素に押されても、絶対に自分のサイズを縮めない */
 }
 
+/* ページネーション全体を中央寄せにして、横に並べる */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* 丸同士の隙間 */
+  margin: 40px 0;
+}
+
+/* 共通の「丸」のスタイル */
+.page-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;  /* 横幅 */
+  height: 42px; /* 高さ（横と同じにして正円にする） */
+  border-radius: 50%; /* 50%で完全に丸くなる */
+  background-color: #ffffff; /* 白い背景 */
+  color: #666666; /* 文字の色 */
+  text-decoration: none;
+  font-style: normal; /* emタグの斜体をリセット */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* 画像のようなやわらかい影 */
+  transition: all 0.2s ease;
+}
+
+/* 現在地（選ばれているページ）のデザイン：画像1枚目の「1」の状態 */
+.page-item.current {
+  background-color: #dcdcdc; /* グレーの背景（お好みでブランドカラー等でもOK） */
+  color: #ffffff;
+}
+
+/* ホバーしたときの動き（お好みで） */
+.page-item:hover:not(.disabled):not(.current) {
+  background-color: #f5f5f5;
+}
+
+/* 押せない状態のボタン（最初や最後のページにいるときのPrevなど） */
+.page-item.disabled {
+  opacity: 0.4;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+
 
 /*postsフォルダのmdファイルの装飾*/
 .small-text {
