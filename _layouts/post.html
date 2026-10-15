@@ -14,6 +14,25 @@ layout: default
   <p>{{ page.date | date: "%Y年%m月%d日" }}</p>
 </div>
 
+<div class="post-navigation">
+  <!-- 前の記事（存在する場合） -->
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="nav-prev">&laquo; 前の記事</a>
+  {% else %}
+    <span class="nav-prev disabled">前の記事</span>
+  {% endif %}
+
+  <!-- 記事一覧へ -->
+  <a href="{{ '/blog.html' | relative_url }}" class="nav-list">記事一覧へ</a>
+
+  <!-- 次の記事（存在する場合） -->
+  {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="nav-next">次の記事 &raquo;</a>
+  {% else %}
+    <span class="nav-next disabled">次の記事</span>
+  {% endif %}
+</div>
+
 <hr>
 {{ content }}
 <hr>
