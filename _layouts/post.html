@@ -24,6 +24,8 @@ layout: default
 
   <!-- 前の記事がある場合 -->
   {% if page.previous %}
+        <div class="post-nav-prev">← 前の記事
+</div>
     <div class="blog-card">
       <a href="{{ page.previous.url }}">
         <div class="blog-card-image">
@@ -35,14 +37,14 @@ layout: default
         </div>
       </a>
     </div>
-      <div class="post-nav-prev">← 前の記事
-</div>
   {% endif %}
 
 
 
   <!-- 次の記事がある場合 -->
   {% if page.next %}
+   <div class="post-nav-next">次の記事 →
+</div>
     <div class="blog-card">
       <a href="{{ page.next.url }}">
         <div class="blog-card-image">
@@ -54,8 +56,6 @@ layout: default
         </div>
       </a>
     </div>
-      <div class="post-nav-next">次の記事 →
-</div>
   {% endif %}
 
 </div>
