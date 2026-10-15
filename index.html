@@ -51,13 +51,13 @@ paginate: true
     <span>&laquo; Prev</span>
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
+  {% for page in (1..paginator.total_pages) %}<！--1ページからgaginatorで作った全てのページのページ番号を1個ずつ取り出す-->
+    {% if page == paginator.page %}<！--paginator.pageは現在閲覧中のページのこと-->
       <em>{{ page }}</em>
     {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+      <a href="{{ '/' | relative_url }}">{{ page }}</a><！--paginatorで作るのは2ページ目以降なので1ページ目のリンクはここで指定-->
     {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a><！--yamlにリンクはpage:numと書いたのでその:numのところをpageに変えている-->
     {% endif %}
   {% endfor %}
 
