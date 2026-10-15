@@ -211,7 +211,6 @@
   font-size: 1em;
   font-weight: bold;
   color: #928484; /*←タイトルの文字色*/
-  margin-bottom: 5px;
 }
 
 /*markdown-tocは子のulを指してる*/
@@ -219,6 +218,7 @@
   padding-left: 30px;
   margin-top:0px;
   padding-top:0px;
+  margin-bottom: 8px;
 }
 
 #markdown-toc ul {
