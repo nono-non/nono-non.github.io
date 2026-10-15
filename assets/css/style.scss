@@ -21,20 +21,31 @@
 .global-nav {
   display: flex;
   background: #f5f5f5;
-  justify-content: center; /* 水平方向（主軸）の中央揃え */
-  align-items: center;     /* 垂直方向（交差軸）の中央揃え */
-  height: 40px;
-  padding: 0 8px 0 0px;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center;     /* 垂直方向の中央揃え */
+  height: 50px;            /* 高さを少しゆとりを持たせる */
+  gap: 16px;               /* 項目と項目の間のすき間を綺麗に空ける */
 }
 
 .global-nav a {
-  color: #928484;
+  color: #666666;          /* 通常時の文字色 */
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
-  margin: 0 0 0 12px;
-  border-left: 9px solid #928484;
-  padding-left: 10px;
+  padding: 8px 16px;       /* 文字のまわりに余白をとってカプセル状にする */
+  border-radius: 20px;     /* 角を丸くしてカプセル型にする */
+  transition: background-color 0.2s ease; /* （お好みで）背景色の変化をなめらかに */
+}
+
+/* マウスを乗せたとき（ホバーしたとき）の見た目 */
+.global-nav a:hover {
+  background-color: #e5e5e5; /* 薄いグレーにする */
+}
+
+/* 現在地（選ばれているページ）のとき：画像で「TOP」が濃い丸になっていた部分 */
+.global-nav a.current {
+  background-color: #1a2530; /* 画像のような濃いネイビー（お好みで変更OK） */
+  color: #ffffff;            /* 文字を白にする */
 }
 
 .project-name {
