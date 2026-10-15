@@ -211,13 +211,12 @@
   font-size: 1em;
   font-weight: bold;
   color: #928484; /*←タイトルの文字色*/
-  margin: 0.7em;
-  padding: 0em;
 }
 
 /*markdown-tocは子のulを指してる*/
 #markdown-toc {
   padding-left: 30px;
+  margin:5px;
 }
 
 #markdown-toc ul {
