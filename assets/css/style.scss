@@ -2,7 +2,7 @@
 ---
 @import "{{ site.theme }}";
 
-//大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意
+/*大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意*/
 
 .page-header {
   /* 帯全体の背景色など */
@@ -199,7 +199,7 @@
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   border: none;
   max-width: 500px;
-  margin: 0 auto;//0 auto 0 autoのこと上下は0px左右は余った文を自動で半分にして振り分けてくれる。つまり最大500と設定してるので、ブラウザがそれより大きい場合500より余った幅を二つに割って左右に空白として入れてくれるのでちょうど真ん中に来る
+  margin: 0 auto;/*0 auto 0 autoのこと上下は0px左右は余った文を自動で半分にして振り分けてくれる。つまり最大500と設定してるので、ブラウザがそれより大きい場合500より余った幅を二つに割って左右に空白として入れてくれるのでちょうど真ん中に来る*/
 }
 
 .toc-box p {
@@ -215,7 +215,8 @@
   padding: 0em;
 }
 
-#markdown-toc {//これ自信がulを指してる
+/*markdown-tocは子のulを指してる*/
+#markdown-toc {
   margin-bottom: 0;
   padding-bottom: 2px;
 }
@@ -226,7 +227,6 @@
 
 #markdown-toc li {
   font-weight: bold;
-  /*border-bottom: dotted 1px #FFB2AE;*/
   font-size: 15px;
 }
 
