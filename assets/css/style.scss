@@ -149,14 +149,51 @@
   padding-bottom: 0px;
 }
 
-.post-nav-prev {
-  color: #928484;  /*前次記事の文字色*/
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 40px 0;
 }
 
-.post-nav-next {
-  color: #928484;  /*前次記事の文字色*/
-  text-align: right;
+/* 共通のボタンのベーススタイル（角丸のボックス） */
+.post-navigation a,
+.post-navigation span {
+  flex: 1; /* 横幅を均等に分ける */
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: 8px; /* 角を少し丸くする */
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-sizing: border-box;
 }
+
+/* 1. 「前の記事」：左側（落ち着いた薄いグレー） */
+.nav-prev {
+  background-color: #e5e5e5;
+  color: #777777;
+}
+
+/* 2. 「記事一覧へ」：真ん中（枠線のみ ＆ 文字にダスティピンク） */
+.nav-list {
+  background-color: #ffffff;
+  border: 2px solid #DCA6A6; /* ダスティピンクの枠線 */
+  color: #DCA6A6;            /* 文字色もダスティピンク */
+}
+
+/* 3. 「次の記事」：右側（ダスティピンクの塗りつぶし ＆ 白文字） */
+.nav-next {
+  background-color: #DCA6A6; /* ダスティピンクの背景 */
+  color: #ffffff;            /* 文字は白 */
+}
+
+/* 記事がないときの見た目（薄くする） */
+.post-navigation span.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 
 /*index.mdの全体装飾*/
 .category-card-box {
