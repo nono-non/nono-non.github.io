@@ -48,23 +48,23 @@ paginate: true
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <span>&laquo;</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}<!--1ページからgaginatorで作った全てのページのページ番号を1個ずつ取り出す-->
     {% if page == paginator.page %}<!--paginator.pageは現在閲覧中のページのこと-->
-      <em>{{ page }}</em>
+      <em class="page-item current">{{ page }}</em>
     {% elsif page == 1 %}
-      <a href="{{ '/' | relative_url }}">{{ page }}</a><!--paginatorで作るのは2ページ目以降なので1ページ目のリンクはここで指定-->
+      <a href="{{ '/' | relative_url }}" class="page-item">{{ page }}</a><!--paginatorで作るのは2ページ目以降なので1ページ目のリンクはここで指定-->
     {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a><!--yamlにリンクはpage:numと書いたのでその:numのところをpageに変えている-->
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-item">{{ page }}</a><!--yamlにリンクはpage:numと書いたのでその:numのところをpageに変えている-->
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
   {% else %}
-    <span>Next &raquo;</span>
+     <span class="page-item disabled">&raquo;</span>
   {% endif %}
 </div>
 {% endif %}
