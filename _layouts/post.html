@@ -1,19 +1,6 @@
 ---
 layout: default
 ---
-
-<div class="pankuzu">
-  <a href="{{ '/' | relative_url }}">ホーム</a>
- <span> > </span>
-  <a href="{{ '/blog.html' | relative_url }}">株ブログ</a>
-</div>
-
-<h1>{{ page.title }}</h1>
-
-<div class="date-nav">
-  <p>{{ page.date | date: "%Y年%m月%d日" }}</p>
-</div>
-
 <div class="post-navigation">
   <!-- 前の記事（存在する場合） -->
   {% if page.previous.url %}
@@ -31,6 +18,17 @@ layout: default
   {% else %}
     <span class="nav-next disabled">次の記事</span>
   {% endif %}
+</div>
+<div class="pankuzu">
+  <a href="{{ '/' | relative_url }}">ホーム</a>
+ <span> > </span>
+  <a href="{{ '/blog.html' | relative_url }}">株ブログ</a>
+</div>
+
+<h1>{{ page.title }}</h1>
+
+<div class="date-nav">
+  <p>{{ page.date | date: "%Y年%m月%d日" }}</p>
 </div>
 
 <hr>
