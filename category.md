@@ -9,7 +9,7 @@ title: "ふぇりーちぇ"
     <div class="category-card-image">
       <img src="images/game.jpeg" alt="恐竜の画像">
     </div>
-    <div class="category-card-title">恐竜ゲーム<br><span class="small-text">⚠️パソコンでPlay可</span>
+    <div class="category-card-title">恐竜ゲーム(※パソコンでplay可)
     </div>
   </a>
 </div>
