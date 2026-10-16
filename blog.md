@@ -3,8 +3,7 @@ layout: default
 title: "ブログ一覧"
 ---
 
-<div class="section-label"><span class="ja-sub">
-株ブログ一覧</span></div>
+<div class="section-label">STOCK BLOGS</div>
 
 {% for post in site.posts %}
 
