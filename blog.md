@@ -3,7 +3,7 @@ layout: default
 title: "ブログ一覧"
 ---
 
-## 株ブログ一覧
+<div class="section-label">株ブログ一覧</div>
 
 {% for post in site.posts %}
 
