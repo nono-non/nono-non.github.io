@@ -421,13 +421,14 @@ height: 150px;
   overflow: hidden;
 }
 
-.toc-box {
+.toc-box { /* 目次のクラス名に合わせて変更してください */
   background-color: #ffffff;
-  border: 1px solid #EAD8D6; /* 薄いダスティピンクの枠線 */
-  box-shadow: none;
+  box-shadow: 0 4px 12px rgba(74, 59, 58, 0.08); /* カードと同じ温かい影 */
+  border: none;
   border-radius: 12px;
   padding: 1.5rem;
 }
+
 
 
 
