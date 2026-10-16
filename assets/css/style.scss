@@ -360,7 +360,7 @@ height: 250px;
 
 #markdown-toc li li {
   border-bottom: none; /* 小見出しは下線を消してスッキリ */
-  padding: 4px 0 4px 3px;
+  padding: 4px 0 4px -2px;
   font-weight: normal;
   font-size: 13px;
   position: relative;
@@ -370,7 +370,7 @@ height: 250px;
 #markdown-toc ul li::before {
   content: "";
   position: absolute; /* マイナス棒の「位置」の調整 */
-  left: -10px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
+  left: -15px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
   top: 50%; /* 上から50%の位置 */
   border-top: solid 1px #928484;
   background: none;/*親の丸ポッチの背*/
