@@ -70,7 +70,7 @@ body {
 }
 
 .global-nav a {
-  color: #55373b;          /* 40292c 3e2f2d通常時の文字色666666 */
+  color: #40292c;          /* 40292c 3e2f2d通常時の文字色666666 */
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
@@ -86,7 +86,7 @@ body {
 
 /* 現在地（選ばれているページ）のとき：画像で「TOP」が濃い丸になっていた部分 */
 .global-nav a.current {
-  background-color: #55373b; /* 画像のような濃いネイビ1a2530 */
+  background-color: #40292c; /* 画像のような濃い55373bネイビ1a2530 */
   color: #ffffff;            /* 文字を白にする */
 }
 
