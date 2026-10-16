@@ -21,12 +21,12 @@ body {
 
 .main-content h2 {
   font-size: 20px;
-  color: #928484;
+  color: #333333;
   font-weight: bold;
   padding: 10px 30px;
   margin-bottom: 1em;
   border-radius: 5px;
-  background: #c4a4a1;
+  background: #dca6a6;
   text-align: left;
 }
 
@@ -37,7 +37,7 @@ body {
   padding: 10px 30px;
   margin-bottom: 1em;
   text-align: left;
-  border-left: 10px solid #c4a4a1;
+  border-left: 10px solid #dca6a6;
 }
 
 /*default.htmlの装飾*/
@@ -45,7 +45,7 @@ body {
   /* 帯全体の背景色など */
   padding-left: 0 !important;
   padding-right: 0 !important;
-  background-color: #b49a98;/* または #c4a4a1 B49A98 dca6a6など */
+  background-color: #dca6a6;/* または #c4a4a1 B49A98 dca6a6など */
   padding-top: 1rem;
   padding-bottom: 0rem;
   background-image: none;
@@ -86,7 +86,7 @@ body {
 
 /* 現在地（選ばれているページ）のとき：画像で「TOP」が濃い丸になっていた部分 */
 .global-nav a.current {
-  background-color: #1a2530; /* 画像のような濃いネイビー（お好みで変更OK） */
+  background-color: #333333; /* 画像のような濃いネイビ1a2530 */
   color: #ffffff;            /* 文字を白にする */
 }
 
