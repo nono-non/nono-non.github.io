@@ -4,12 +4,12 @@
 
 /*大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意*/
 
-/*defaoult.htmlの装飾*/
+/*default.htmlの装飾*/
 .page-header {
   /* 帯全体の背景色など */
   padding-left: 0 !important;
   padding-right: 0 !important;
-  background-color: #dca6a6; /* または #c4a4a1 B49A98 e0ae9e dca6a6など */
+  background-color: #dca6a6;/* または #c4a4a1 B49A98 e0ae9e dca6a6など */
   padding-top: 1rem;
   padding-bottom: 0rem;
 }
@@ -49,10 +49,6 @@
 .global-nav a.current {
   background-color: #1a2530; /* 画像のような濃いネイビー（お好みで変更OK） */
   color: #ffffff;            /* 文字を白にする */
-}
-
-.project-name {
-  /* タイトル文字(h1)のスタイル */
 }
 
 .project-tagline {
