@@ -503,19 +503,19 @@ height: 150px;
   list-style: none;
 }
 
-/* 2階層目（小見出し）の左側に置く「手帳風の横ライン（―）」 */
-#markdown-toc ul li::before {
+/* 1階層目（大見出し）の左側に置く「ダスティピンクの丸（●）」 */
+#markdown-toc > li::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 50%;
+  left: 3px;
+  top: 15px; /* 💡50%から固定位置に変更（1行目の高さにぴったり合わせる） */
   transform: translateY(-50%);
-  width: 8px; /* 横ラインの長さ */
-  border-top: solid 1px #928484; /* 柔らかいブラウンの細いライン */
-  background: none; /* 親の丸ポッチの背景色を打ち消す */
-  border-radius: 0;
-  height: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #DCA6A6; /* ダスティピンクの小さなドット */
+  border-radius: 50%; /* まんまるにする */
 }
+
 
 #markdown-toc li:last-child {
   border-bottom: none;
