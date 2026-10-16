@@ -331,7 +331,7 @@ height: 250px;
   list-style: none;
 }
 
-#markdown-toc li {
+#markdown-toc > li {
   font-weight: bold;
   font-size: 15px;
   border-bottom: dotted 1px #EAD8D6;
@@ -340,10 +340,8 @@ height: 250px;
   list-style: none;
 }
 
-
-
 /* 1階層目（大見出し）の左側に置く「ダスティピンクの丸（●）」 */
-#markdown-toc li::before {
+#markdown-toc > li::before {
   content: "";
   position: absolute;
   left: 3px;  /*作った円を置く位置はleft.topとかで決めるこれも左から3pxの位置におけと言ってるデフォルトは左ぴったりにくっついている*/
