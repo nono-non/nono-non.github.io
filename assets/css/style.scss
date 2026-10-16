@@ -329,7 +329,7 @@ height: 250px;
 #markdown-toc li {
   font-weight: bold;
   font-size: 15px;
-  border-bottom: dotted 1px #c0c0c0;
+  border-bottom: dotted 1px #EAD8D6;
 }
 
 #markdown-toc a {
@@ -350,7 +350,7 @@ height: 250px;
   top: 50%; /* 上から50%の位置 */
   transform: translateY(-50%);  /* 文字の上下の真ん中にぴったり合わせる */
   width: 8px; /* マイナス棒の長さ（横幅） */
-  border-top: solid 1px #928484;  /* 線の厚み（太さ）・種類・色 */
+  border-top: solid 1px #3e2f2d;  /* 線の厚み（太さ）・種類・色 */
 }
 
 #markdown-toc li:last-child {
@@ -420,5 +420,14 @@ height: 150px;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.toc-box {
+  background-color: #ffffff;
+  border: 1px solid #EAD8D6; /* 薄いダスティピンクの枠線 */
+  box-shadow: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
 
 
