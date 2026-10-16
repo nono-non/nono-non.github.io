@@ -98,7 +98,7 @@ body, p, li {
 }
 
 .project-tagline {
-  /* 説明文(h2)のスタイル */
+  /* 説明文のスタイル 今は非表示にしてる*/
   color: #ffdeca;
   padding:0em;
   margin:0em;
@@ -208,6 +208,13 @@ body, p, li {
 
 
 /*index.mdの全体装飾*/
+.top-page-label{
+  font-size: 22px;
+  color: #4a3b3a;
+  font-weight: bold;
+  text-align:center;
+}
+
 .category-card-box {
   display: flex;
   gap:15px;
