@@ -23,6 +23,8 @@
   position: sticky; /* 画面に固定する設定 */
   top: 0;           /* 画面の一番上に張り付かせる */
   z-index: 100;     /* 他のコンテンツの下に隠れてしまわないように手前に表示する */
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   background: #f5f5f5;
   justify-content: center; /* 水平方向の中央揃え */
