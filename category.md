@@ -3,7 +3,7 @@ layout: default
 title: "ふぇりーちぇ"
 ---
 
-## 作ったゲーム
+## 手作りしたアプリやゲームたち
 <div class="category-card">
   <a href="https://nono-non.github.io/DinosaurGame/dino.html">
     <div class="category-card-image">
