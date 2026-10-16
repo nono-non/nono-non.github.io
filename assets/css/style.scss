@@ -346,12 +346,12 @@ height: 250px;
 #markdown-toc li::before {
   content: "";
   position: absolute;
-  left: 3px;
+  left: 3px;  /*作った円を置く位置はleft.topとかで決めるこれも左から3pxの位置におけと言ってるデフォルトは左ぴったりにくっついている*/
   top: 15px; /* 💡50%から固定位置に変更（1行目の高さにぴったり合わせる） */
-  transform: translateY(-50%);
-  width: 6px;
+  transform: translateY(-50%);/*topとセットで使うtopだけだと綺麗に真ん中にならないのでこれをやると綺麗に真ん中になる*/
+  width: 6px;/*縦と横を決めると縦6横6の四角が作られる*/
   height: 6px;
-  background-color: #DCA6A6; /* ダスティピンクの小さなドット */
+  background-color: #DCA6A6; /* 作った円をダスティピンク色にする */
   border-radius: 50%; /* まんまるにする */
 }
 
