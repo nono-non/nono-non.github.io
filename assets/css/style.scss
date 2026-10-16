@@ -418,3 +418,10 @@ height: 150px;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.blog-card {
+  background-color: #ffffff;
+  border: 1px solid #EAD8D6; /* 薄いダスティピンクの枠線 */
+  box-shadow: none; /* 影をなくしてすっきり見せる */
+  border-radius: 12px;
+}
