@@ -318,27 +318,51 @@ height: 250px;
 
 /*markdown-tocは子のulを指してる*/
 #markdown-toc {
-  padding-left: 30px;
+  padding-left: 0px; /* ポッチを自作するため外枠の余白をリセット */
+  list-style: none; /* デフォルトの黒丸を削除 */
   margin-top:0px;
   margin-bottom: 8px;
 }
 
 #markdown-toc ul {
   position: relative;
-  padding-left: 20px; /* デフォルトの広い余白を小さくする（初期値は約40pxなど） */
+  padding-left: 15px; /* 親（大見出し）からのインデント（少し右に下げる） */
+  margin: 4px 0 2px 0;
+  list-style: none;
 }
 
 #markdown-toc li {
   font-weight: bold;
   font-size: 15px;
   border-bottom: dotted 1px #EAD8D6;
+  position: relative;
+  padding: 6px 0 6px 18px; /* 左側にポッチ（●）を置くためのスペースを作る */
+  list-style: none;
+}
+
+
+
+/* 1階層目（大見出し）の左側に置く「ダスティピンクの丸（●）」 */
+#markdown-toc li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 15px; /* 💡50%から固定位置に変更（1行目の高さにぴったり合わせる） */
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #DCA6A6; /* ダスティピンクの小さなドット */
+  border-radius: 50%; /* まんまるにする */
 }
 
 #markdown-toc a {
   color: #3e2f2d;/*928484見出しの文字色*/
+  text-decoration: none;
 }
 
 #markdown-toc li li {
+  border-bottom: none; /* 小見出しは下線を消してスッキリ */
+  padding: 4px 0 4px 14px;
   font-weight: normal;
   font-size: 13px;
   position: relative;
