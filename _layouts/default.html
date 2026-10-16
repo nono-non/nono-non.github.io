@@ -25,6 +25,7 @@
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
+    </header>
       <div class="global-nav">
   <!-- ホーム：URLが完全に「/」のときだけ光る -->
   <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="current"{% endif %}>ホーム</a>
@@ -35,8 +36,6 @@
   <!-- 株ブログ：URLが「/blog.html」のとき、または個別のブログ記事（例: /blog/...）のときにも光らせる -->
   <a href="{{ '/blog.html' | relative_url }}" {% if page.url == '/blog.html' or page.url contains '/kabu/' %}class="current"{% endif %}>株ブログ</a>
 </div>
-    </header>
-
     <main id="content" class="main-content" role="main">
       {{ content }}
 
