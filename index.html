@@ -5,6 +5,7 @@ paginate: true
 ---
 
 {% if paginator.page == 1 %}
+<div class="top-page-label>CATEGORY</div>
 <div class="category-card-box">
  <div class="category-card">
   <a href="{{ '/category.html' | relative_url }}">
@@ -24,7 +25,7 @@ paginate: true
  </div>
 </div>
 
-<h2>新着記事</h2>
+ <div class="top-page-label>NEW ARRIVALS</div>
 {% endif %}
 
 {% for post in paginator.posts %}
