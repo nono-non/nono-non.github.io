@@ -420,9 +420,10 @@ height: 150px;
 }
 
 .blog-card {
-  background-color: #ffffff;
-  /* グレーの影ではなく、文字色(#4A3B3A)を薄くした温かみのある影にする */
-  box-shadow: 0 4px 12px rgba(74, 59, 58, 0.08); 
+  background-color: #FAF4F3; /* ほんのりミルキーピンク */
+  border: none;
+  box-shadow: 0 4px 12px rgba(74, 59, 58, 0.05); /* 濃いブラウンと同系統のやわらかい影 */
   border-radius: 12px;
 }
+
 
