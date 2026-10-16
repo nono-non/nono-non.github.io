@@ -425,3 +425,11 @@ height: 150px;
   box-shadow: none; /* 影をなくしてすっきり見せる */
   border-radius: 12px;
 }
+
+.blog-card {
+  background-color: #ffffff;
+  /* グレーの影ではなく、文字色(#4A3B3A)を薄くした温かみのある影にする */
+  box-shadow: 0 4px 12px rgba(74, 59, 58, 0.08); 
+  border-radius: 12px;
+}
+
