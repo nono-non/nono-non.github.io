@@ -69,6 +69,7 @@ body, p, li {
   width: 100%;
   box-sizing: border-box;
   display: flex;
+  margin-bottom:0;
   background: #f5f5f5;
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center;     /* 垂直方向の中央揃え */
@@ -209,10 +210,11 @@ body, p, li {
 
 /*index.mdの全体装飾*/
 .top-page-label{
-  font-size: 22px;
+  font-size: 26px;
   color: #4a3b3a;
   font-weight: bold;
   text-align:center;
+  margin-bottom:20px;
 }
 
 .category-card-box {
