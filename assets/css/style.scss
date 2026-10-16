@@ -6,6 +6,11 @@
 body {
   background-color: #Fcfbf7; /* 好みのオフホワイトfaf6f6 faf6f0 fcfbf7や薄いピンク・グレーなど */
 }
+
+/* 本文や段落（pタグなど）の文字色を変更する */
+body, p, li {
+  color: #3e2f2d;
+}
 /*通常使うpやh1などの装飾*/
 .main-content p {
   margin-bottom: 2.5em;
