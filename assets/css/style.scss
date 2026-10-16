@@ -3,6 +3,42 @@
 @import "{{ site.theme }}";
 
 /*大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意*/
+body {
+  background-color: #FAF6F6; /* 好みのオフホワイトや薄いピンク・グレーなど */
+}
+/*通常使うpやh1などの装飾*/
+.main-content p {
+  margin-bottom: 2.5em;
+}
+
+.main-content h1 {
+  font-size: 26px;
+  color: #928484;
+  font-weight: bold;
+  padding: 8px 15px;
+  margin: 1px;
+}
+
+.main-content h2 {
+  font-size: 20px;
+  color: #928484;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background: #F5F5F5;
+  text-align: left;
+}
+
+.main-content h3 {
+  font-size: 19px;
+  color: #928484;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-bottom: 1em;
+  text-align: left;
+  border-left: 10px solid #F5F5F5;
+}
 
 /*default.htmlの装飾*/
 .page-header {
@@ -82,40 +118,6 @@
 
 .footer-nav a:first-child {
   margin-top: 1em;/*一番最初の子要素だけcaymanの方でmargin-topが0になってしまうのでそれを修正*/
-}
-
-/*通常使うpやh1などの装飾*/
-.main-content p {
-  margin-bottom: 2.5em;
-}
-
-.main-content h1 {
-  font-size: 26px;
-  color: #928484;
-  font-weight: bold;
-  padding: 8px 15px;
-  margin: 1px;
-}
-
-.main-content h2 {
-  font-size: 20px;
-  color: #928484;
-  font-weight: bold;
-  padding: 10px 30px;
-  margin-bottom: 1em;
-  border-radius: 5px;
-  background: #F5F5F5;
-  text-align: left;
-}
-
-.main-content h3 {
-  font-size: 19px;
-  color: #928484;
-  font-weight: bold;
-  padding: 10px 30px;
-  margin-bottom: 1em;
-  text-align: left;
-  border-left: 10px solid #F5F5F5;
 }
 
 /*post.htmlの装飾*/
