@@ -345,7 +345,7 @@ height: 250px;
   content: "";
   position: absolute;
   left: 3px;  /*作った円を置く位置はleft.topとかで決めるこれも左から3pxの位置におけと言ってるデフォルトは左ぴったりにくっついている*/
-  top: 15px; /* 💡50%から固定位置に変更（1行目の高さにぴったり合わせる） */
+  top: 17px; /* 💡50%から固定位置に変更（1行目の高さにぴったり合わせる） */
   transform: translateY(-50%);/*topとセットで使うtopだけだと綺麗に真ん中にならないのでこれをやると綺麗に真ん中になる*/
   width: 6px;/*縦と横を決めると縦6横6の四角が作られる*/
   height: 6px;
@@ -370,7 +370,7 @@ height: 250px;
 #markdown-toc ul li::before {
   content: "";
   position: absolute; /* マイナス棒の「位置」の調整 */
-  left: 5px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
+  left: -3px; /* 💡文字の「左側」に飛び出させる距離（要微調整） */
   top: 50%; /* 上から50%の位置 */
   border-top: solid 1px #928484;
   background: none;/*親の丸ポッチの背*/
