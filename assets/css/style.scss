@@ -55,11 +55,11 @@ body, p, li {
   display: flex;
   align-items: center;      /* 縦の中央 */
   justify-content: center;  /* 横の中央 */
-  height:25px;
+  height:30px;/* ヘッダーの高さ、たぶん45pxくらいより小さくはならなそう。無理やり小さくしたいならimportantが必要かも */
 }
 
 .project-name {
-  font-size:25px;
+  font-size:27px;
 }
 
 .global-nav {
