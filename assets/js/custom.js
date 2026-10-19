@@ -1,4 +1,5 @@
 'use strict';
+//結局書いたけど今使ってない。span埋め込むコード
 document.addEventListener("DOMContentLoaded", function() {
   // Caymanテーマの本文エリアを指定
   const content = document.querySelector('.main-content'); 
