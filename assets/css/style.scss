@@ -462,3 +462,9 @@ height: 170px;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/*custom.jsファイル*/
+.hidden-kuten {
+  opacity: 0.1; /* 0.0で完全非表示、1.0で普通の濃さになります */
+  display: inline-block;
+}
