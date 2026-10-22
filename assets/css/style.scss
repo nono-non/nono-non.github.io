@@ -220,6 +220,7 @@ body, p, li {
   margin-bottom:20px;
   letter-spacing:0.02em;
 }
+
 /*カテゴリ0カードの全体装飾*/
 .category-card-box {
   display: flex;
@@ -236,7 +237,6 @@ body, p, li {
   padding: 7px 7px 4px;   /* 枠の太さ */
   box-sizing: border-box; /* paddingを含めて高さ固定にする */
   overflow: hidden;  /* 丸めた角から画像や背景がはみ出さないようにする */
-  justify-content: center;
 }
 
 .category-card a {
@@ -244,6 +244,7 @@ body, p, li {
   flex-direction: column;
   height: 100%; /* リンクの判定エリアをカードの高さいっぱいにしてるどこ推してもリンクに飛ぶ */
   text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
+  justify-content: center;/*これを使うときは同じ階層にdesplay flexが必要*/
 }
 
 .category-card-image {
@@ -280,6 +281,7 @@ body, p, li {
     font-size: 22px;
   }
 }
+
 /*ブログカードの装飾*/
 .blog-card {
   height: 110px; /* 好きな高さに */
