@@ -424,11 +424,16 @@ height: 270px;
     height: 180px; 
   }
   .blog-card-image {
-    flex-basis:40%;
+    flex:0 0 40%;
+    padding:5px 10px;
   }
   .blog-card-title {
-    font-size: 25px;
-    padding:15px 10px 0px;
+    font-size: 30px;
+    padding:5px 10px 0px;
+  }
+  .blog-card-info {
+    flex: 1;
+    box-sizing: border-box;
   }
 }
 
