@@ -420,9 +420,16 @@ height: 270px;
 
 /* 画面幅768px以上 の画面*/
 @media screen and (min-width: 768px) {
-.blog-card {
-height: 180px; 
-}
+  .blog-card {
+    height: 180px; 
+  }
+  .blog-card-image {
+    flex-basis:40%;
+  }
+  .blog-card-title {
+    font-size: 25;
+    padding:15px 10px 0px;
+  }
 }
 
 .blog-card a {
