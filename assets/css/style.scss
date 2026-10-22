@@ -273,6 +273,10 @@ body, p, li {
 @media screen and (min-width: 768px) {
   .category-card {
     height: 260px; 
+    padding: 7px 7px 4px;
+  }
+  .category-card a { 
+    padding-bottom:0;
   }
   .category-card-image {
     flex: 0.9;
