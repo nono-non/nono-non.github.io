@@ -234,19 +234,6 @@ body, p, li {
   overflow: hidden;  /* 丸めた角から画像や背景がはみ出さないようにする */
 }
 
-/* 画面幅768px以上 の画面*/
-@media screen and (min-width: 710px) {
-  .category-card {
-height: 270px; 
-  }
-  .category-card-image {
-    flex: 0.9;
-  }
-  .category-card-title {
-    padding: 10px 0;
-  }
-}
-
 .category-card a {
   display: flex; /*フレックスボックスにして中身を縦に並べる */
   flex-direction: column;
@@ -274,6 +261,19 @@ height: 270px;
   text-align: center;
   font-size: 18px;
   flex-shrink: 0; /* 他の要素に押されても、絶対に自分のサイズを縮めない */
+}
+
+/* 画面幅768px以上 の画面*/
+@media screen and (min-width: 768px) {
+  .category-card {
+height: 270px; 
+  }
+  .category-card-image {
+    flex: 0.9;
+  }
+  .category-card-title {
+    padding: 10px 0;
+  }
 }
 
 /* ページネーション全体を中央寄せにして、横に並べる */
@@ -418,25 +418,6 @@ height: 270px;
   overflow: hidden;           /* 丸めた角から画像や背景がはみ出さないようにする */
 }
 
-/* 画面幅768px以上 の画面*/
-@media screen and (min-width: 710px) {
-  .blog-card {
-    height: 180px; 
-  }
-  .blog-card-image {
-    flex:0 0 40%;
-    padding:5px 10px;
-  }
-  .blog-card-title {
-    font-size: 30px;
-    padding:5px 10px 0px;
-  }
-  .blog-card-info {
-    flex: 1;
-    box-sizing: border-box;
-  }
-}
-
 .blog-card a {
   display: flex;
   height: 100%; /* カードの高さに合わせる */
@@ -484,4 +465,23 @@ height: 270px;
 /*custom.jsファイル*/
 .hidden-kuten {
   display: none;
+}
+
+/* 画面幅768px以上 の画面*/
+@media screen and (min-width: 768px) {
+  .blog-card {
+    height: 180px; 
+  }
+  .blog-card-image {
+    flex:0 0 40%;
+    padding:5px 10px;
+  }
+  .blog-card-title {
+    font-size: 30px;
+    padding:5px 10px 0px;
+  }
+  .blog-card-info {
+    flex: 1;
+    box-sizing: border-box;
+  }
 }
