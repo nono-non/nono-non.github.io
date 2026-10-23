@@ -67,12 +67,12 @@ body, p, li {
   display: flex;
   align-items: center;      /* 縦の中央 */
   justify-content: center;  /* 横の中央 */
-  padding:8px 0;/* ヘッダーの高さはcaymanテーマはheightじゃなくpaddingになってるっぽい */
+  padding:7px 0;/* ヘッダーの高さはcaymanテーマはheightじゃなくpaddingになってるっぽい */
 }
 
 .project-name {
-  font-size:30px;
-  letter-spacing:0.03em;
+  font-size:32px;
+  letter-spacing:0.02em;
 }
 
 .global-nav {
