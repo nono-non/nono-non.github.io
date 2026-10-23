@@ -63,8 +63,6 @@ body, p, li {
    ========================================== */
 .page-header {
   /* 帯全体の背景色など */
-  padding-left: 0 !important;
-  padding-right: 0 !important;
   background-color: #dca6a6;/* または #c4a4a1 B49A98 dca6a6など */
   background-image: none;/* caymanの初期はグラデーション緑の画像が使われてたっぽい。背景色を設定しても画像に上書きされることがあるのでこれで画像消す */
   display: flex;
@@ -75,6 +73,7 @@ body, p, li {
 
 .project-name {
   font-size:27px;
+  letter-spacing:0.03em;
 }
 
 .global-nav {
