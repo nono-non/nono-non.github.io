@@ -270,7 +270,7 @@ body, p, li {
 }
 
 /* 画面幅768px以上 の画面*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 599px) {
   .category-card {
     height: 300px; 
     padding: 7px 7px 0px;
@@ -341,7 +341,7 @@ body, p, li {
 }
 
 /* 画面幅768px以上 の画面*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 599px) {
   .blog-card {
     height: 200px; 
   }
