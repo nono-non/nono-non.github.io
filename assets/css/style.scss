@@ -67,7 +67,7 @@ body, p, li {
   display: flex;
   align-items: center;      /* 縦の中央 */
   justify-content: center;  /* 横の中央 */
-  height:35px !important;/* ヘッダーの高さ、たぶん45pxくらいより小さくはならなそう。無理やり小さくしたいならimportantが必要かも */
+  height:30px !important;/* ヘッダーの高さ、たぶん45pxくらいより小さくはならなそう。無理やり小さくしたいならimportantが必要かも */
 }
 
 .project-name {
