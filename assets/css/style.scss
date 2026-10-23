@@ -3,6 +3,15 @@
 @import "{{ site.theme }}";
 
 /* ==========================================
+   0. 色の設定（ここを変えるとサイト全体の色が変わる）
+   ========================================== */
+:root {
+  --main-color: #D6C7B2;        /* メインカラー：ヘッダー・h2・h3・もくじの枠と点・前後の記事リンク */
+  --main-color-light: #EBE3D5;  /* メインカラーの薄い版：もくじの外枠線・項目の点線 */
+  --text-color: #3e2f2d;        /* 濃い焦茶：本文・ナビ・h2の文字など */
+}
+
+/* ==========================================
    1. サイト全体・共通のベース（背景色や文字色など）
    ========================================== */
 /*大元のpタグやh1タグに装飾する時.main-contentつけないと強さで負けてしまって反映されない！！注意*/
@@ -12,7 +21,7 @@ body {
 
 /* 本文や段落（pタグなど）の文字色を変更する */
 body, p, li {
-  color: #3e2f2d;
+  color: var(--text-color);
 }
 /*通常使うpやh1などの装飾*/
 .main-content p {
@@ -21,7 +30,7 @@ body, p, li {
 
 .main-content h1 {
   font-size: 26px;
-  color: #3e2f2d;
+  color: var(--text-color);
   font-weight: bold;
   padding: 8px 15px;
   margin: 1px;
@@ -29,12 +38,12 @@ body, p, li {
 
 .main-content h2 {
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text-color);
   font-weight: bold;
   padding: 10px 30px;
   margin-bottom: 1em;
   border-radius: 5px;
-  background: #dca6a6;
+  background: var(--main-color);
   text-align: left;
 }
 
@@ -45,7 +54,7 @@ body, p, li {
   padding: 10px 30px;
   margin-bottom: 1em;
   text-align: left;
-  border-left: 10px solid #dca6a6;
+  border-left: 10px solid var(--main-color);
 }
 
 /*custom.jsファイル※結局使ってない*/
@@ -62,7 +71,7 @@ body, p, li {
    2. ヘッダー・ナビゲーション関連
    ========================================== */
 .page-header {
-  background-color: #8FA5B5;/* または #c4a4a1 B49A98 dca6a6など */
+  background-color: var(--main-color);
   background-image: none;/* caymanの初期はグラデーション緑の画像が使われてたっぽい。背景色を設定しても画像に上書きされることがあるのでこれで画像消す */
   display: flex;
   align-items: center;      /* 縦の中央 */
@@ -90,7 +99,7 @@ body, p, li {
 }
 
 .global-nav a {
-  color: #3e2f2d;          /* 40292c 3e2f2d通常時の文字色666666 */
+  color: var(--text-color);          /* 40292c 3e2f2d通常時の文字色666666 */
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
@@ -106,7 +115,7 @@ body, p, li {
 
 /* 現在地（選ばれているページ）のとき：画像で「TOP」が濃い丸になっていた部分 */
 .global-nav a.current {
-  background-color: #3e2f2d; /* 画像のような濃い55373bネイビ1a2530 */
+  background-color: var(--text-color); /* 画像のような濃い55373bネイビ1a2530 */
   color: #ffffff;            /* 文字を白にする */
 }
 
@@ -126,17 +135,17 @@ body, p, li {
   box-shadow: 0 4px 12px rgba(74, 59, 58, 0.06); /* ほんのり影 */
   border-radius: 0 12px 12px 0; /* 右側だけ角丸 */
   padding: 0.7rem 1.0rem;
-  border: 1px solid #EAD8D6; /* 薄いダスティピンクの枠線 */
+  border: 1px solid var(--main-color-light); /* メインカラーの薄い枠線 */
   width: fit-content;/* ① 【超重要】幅を「中身の文字の長さぴったり（自動）」にする */
   margin: 0 auto;/*0 auto 0 autoのこと上下は0px左右は余った文を自動で半分にして振り分けてくれる。つまり最大500と設定してるので、ブラウザがそれより大きい場合500より余った幅を二つに割って左右に空白として入れてくれるのでちょうど真ん中に来る*/
-  border-left: 8px solid #DCA6A6; /* 左端に濃いめのピンクライン */
+  border-left: 8px solid var(--main-color); /* 左端にメインカラーのライン */
 }
 
 .toc-box p {/*ここはもくじのとこ、タイトル*/
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
-  color: #3e2f2d;
+  color: var(--text-color);
   margin-bottom:5px;
   letter-spacing: 0.2em;
 }
@@ -159,13 +168,13 @@ body, p, li {
 #markdown-toc > li {
   font-weight: bold;
   font-size: 15px;
-  border-bottom: dotted 1px #EAD8D6;
+  border-bottom: dotted 1px var(--main-color-light);
   position: relative;
   padding: 6px 0 6px 18px; /* 左側にポッチ（●）を置くためのスペースを作る */
   list-style: none;
 }
 
-/* 1階層目（大見出し）の左側に置く「ダスティピンクの丸（●）」 */
+/* 1階層目（大見出し）の左側に置く「メインカラーの丸（●）」 */
 #markdown-toc > li::before {
   content: "";
   position: absolute;
@@ -174,12 +183,12 @@ body, p, li {
   transform: translateY(-50%);/*topとセットで使うtopだけだと綺麗に真ん中にならないのでこれをやると綺麗に真ん中になる*/
   width: 6px;/*縦と横を決めると縦6横6の四角が作られる*/
   height: 6px;
-  background-color: #DCA6A6; /* 作った円をダスティピンク色にする */
+  background-color: var(--main-color); /* 作った円をメインカラーにする */
   border-radius: 50%; /* まんまるにする */
 }
 
 #markdown-toc a {
-  color: #3e2f2d;/*928484見出しの文字色*/
+  color: var(--text-color);/*928484見出しの文字色*/
   text-decoration: none;
 }
 
@@ -260,7 +269,7 @@ body, p, li {
 }
 
 .category-card-title {
-  color: #3e2f2d;
+  color: var(--text-color);
   font-weight: bold;
   text-align: center;
   font-size: 18px;
@@ -320,7 +329,7 @@ body, p, li {
 }
 
 .blog-card-info p {
-  color: #3e2f2d;
+  color: var(--text-color);
   font-weight: bold;
   text-align: right;
   font-size: 13px;
@@ -328,7 +337,7 @@ body, p, li {
 }
 
 .blog-card-title {
-  color: #3e2f2d;
+  color: var(--text-color);
   font-weight: bold;
   font-size: 17px;
   margin: 0px 4px 0px 10px;
@@ -412,23 +421,23 @@ body, p, li {
   box-sizing: border-box;
 }
 
-/* 1. 「前の記事」：左側（落ち着いた薄いグレー） */
+/* 1. 「前の記事」：左側（濃い焦茶 ＆ 白文字） */
 .nav-prev {
-  background-color: #3e2f2d;   /*e5e5e5;*/
+  background-color: var(--text-color);   /*e5e5e5;*/
   color: #ffffff;
 }
 
-/* 2. 「記事一覧へ」：真ん中（枠線のみ ＆ 文字にダスティピンク） */
+/* 2. 「記事一覧へ」：真ん中（枠線のみ ＆ 文字は焦茶） */
 .nav-list {
   background-color: #ffffff;
-  border: 2px solid #DCA6A6; /* ダスティピンクの枠線 */
-  color: #DCA6A6;            /* 文字色もダスティピンク */
+  border: 2px solid var(--main-color); /* メインカラーの枠線 */
+  color: var(--text-color);            /* ベージュだと文字が読みにくいので焦茶 */
 }
 
-/* 3. 「次の記事」：右側（ダスティピンクの塗りつぶし ＆ 白文字） */
+/* 3. 「次の記事」：右側（メインカラーの塗りつぶし ＆ 焦茶文字） */
 .nav-next {
-  background-color: #DCA6A6; /* ダスティピンクの背景 */
-  color: #ffffff;            /* 文字は白 */
+  background-color: var(--main-color); /* メインカラーの背景 */
+  color: var(--text-color);            /* ベージュ背景だと白文字は読みにくいので焦茶 */
 }
 
 /* 記事がないときの見た目（薄くする） */
@@ -489,7 +498,7 @@ body, p, li {
   height: 32px; /* 高さ（横と同じにして正円にする） */
   border-radius: 50%; /* 50%で完全に丸くなる */
   background-color: #ffffff; /* 白い背景 */
-  color: #3e2f2d;/*文字の色 */
+  color: var(--text-color);/*文字の色 */
   text-decoration: none;
   font-style: normal; /* emタグの斜体をリセット */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* 画像のようなやわらかい影 */
@@ -505,5 +514,4 @@ body, p, li {
 .page-item:hover:not(.disabled):not(.current) {
   background-color: #f5f5f5;
 }
-
 
