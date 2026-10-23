@@ -62,13 +62,12 @@ body, p, li {
    2. ヘッダー・ナビゲーション関連
    ========================================== */
 .page-header {
-  /* 帯全体の背景色など */
   background-color: #dca6a6;/* または #c4a4a1 B49A98 dca6a6など */
   background-image: none;/* caymanの初期はグラデーション緑の画像が使われてたっぽい。背景色を設定しても画像に上書きされることがあるのでこれで画像消す */
   display: flex;
   align-items: center;      /* 縦の中央 */
   justify-content: center;  /* 横の中央 */
-  height:30px;/* ヘッダーの高さ、たぶん45pxくらいより小さくはならなそう。無理やり小さくしたいならimportantが必要かも */
+  height:35px !important;/* ヘッダーの高さ、たぶん45pxくらいより小さくはならなそう。無理やり小さくしたいならimportantが必要かも */
 }
 
 .project-name {
