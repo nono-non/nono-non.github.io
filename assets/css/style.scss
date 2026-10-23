@@ -442,9 +442,16 @@ body, p, li {
 
 /* 記事がないときの見た目（薄くする） */
 .post-navigation span.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.post-navigation span.nav-prev disabled {
   opacity: 0.2;
   cursor: not-allowed;
 }
+
+
 
 
 /* ==========================================
