@@ -446,13 +446,9 @@ body, p, li {
   cursor: not-allowed;
 }
 
-.post-navigation span.nav-prev disabled {
+.post-navigation span.nav-prev.disabled {
   opacity: 0.2;
-  cursor: not-allowed;
 }
-
-
-
 
 /* ==========================================
    5. フッター関連
