@@ -86,9 +86,8 @@ body, p, li {
 }
 
 .page-header img{
-  width: auto;       /* 親要素の幅いっぱいに合わせる */
-  height: 31px;      /* 縦横比を維持したまま高さを自動調整 */
-  max-width: 100%;   /* 元の画像サイズ以上に引き伸ばさない場合 */
+  width: auto;    /* 親要素の幅いっぱいに合わせる */
+  height: 31px;    /* 縦横比を維持したまま高さを自動調整 */
   display: block;
 }
 
