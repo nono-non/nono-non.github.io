@@ -80,8 +80,13 @@ body, p, li {
 }
 
 .project-name {
+  display: flex;
   font-size:31px;
   letter-spacing:0.02em;
+}
+
+.project-name img{
+
 }
 
 .global-nav {
