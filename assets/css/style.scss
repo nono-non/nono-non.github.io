@@ -82,12 +82,12 @@ body, p, li {
 .project-name {
   font-size:31px;
   letter-spacing:0.02em;
-  padding-left:3px;
+  padding-left:5px;
 }
 
 .page-header img{
   width: auto;       /* 親要素の幅いっぱいに合わせる */
-  height: 28px;      /* 縦横比を維持したまま高さを自動調整 */
+  height: 29px;      /* 縦横比を維持したまま高さを自動調整 */
   max-width: 100%;   /* 元の画像サイズ以上に引き伸ばさない場合 */
   display: block;
 }
