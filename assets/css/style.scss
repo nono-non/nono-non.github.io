@@ -80,12 +80,11 @@ body, p, li {
 }
 
 .project-name {
-  display: flex;
   font-size:31px;
   letter-spacing:0.02em;
 }
 
-.project-name img{
+.page-header img{
   width: 10%;       /* 親要素の幅いっぱいに合わせる */
   height: auto;      /* 縦横比を維持したまま高さを自動調整 */
   max-width: 100%;   /* 元の画像サイズ以上に引き伸ばさない場合 */
