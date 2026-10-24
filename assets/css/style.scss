@@ -145,7 +145,7 @@ body, p, li {
   border: 1px solid var(--main-color-light); /* メインカラーの薄い枠線 */
   width: fit-content;/* ① 【超重要】幅を「中身の文字の長さぴったり（自動）」にする */
   margin: 0 auto;/*0 auto 0 autoのこと上下は0px左右は余った文を自動で半分にして振り分けてくれる。つまり最大500と設定してるので、ブラウザがそれより大きい場合500より余った幅を二つに割って左右に空白として入れてくれるのでちょうど真ん中に来る*/
-  border-left: 8px solid var(--main-color); /* 左端にメインカラーのライン */
+  /*border-left: 8px solid var(--main-color);*/ /* 左端にメインカラーのライン */
 }
 
 .toc-box p {/*ここはもくじのとこ、タイトル*/
