@@ -439,7 +439,7 @@ body, p, li {
 .nav-list {
   background-color: #ffffff;
   border: 2px solid var(--main-color); /* メインカラーの枠線 */
-  color: var(--text-color);            /* ベージュだと文字が読みにくいので焦茶 */
+  color: var(--main-color);            /* ベージュだと文字が読みにくいので焦茶 */
 }
 
 /* 3. 「次の記事」：右側（メインカラーの塗りつぶし ＆ 焦茶文字） */
