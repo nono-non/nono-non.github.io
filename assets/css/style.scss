@@ -19,6 +19,10 @@ body {
   background-color: #Fcfbf7; /* 好みのオフホワイトfaf6f6 faf6f0 fcfbf7や薄いピンク・グレーなど */
 }
 
+html {
+  scroll-padding-top: 60px;/*ヘッダー固定したらその分目次で飛んだ先が隠れるようになったのでそれの設定微調整する*/
+}
+
 /* 本文や段落（pタグなど）の文字色を変更する */
 body, p, li {
   color: var(--text-color);
