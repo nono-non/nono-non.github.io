@@ -103,7 +103,7 @@ body, p, li {
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  background: #fffef9;
+  background: #fff7e6;
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center;     /* 垂直方向の中央揃え */
   height: 50px;            /* 高さを少しゆとりを持たせる */
@@ -274,6 +274,7 @@ body, p, li {
 }
 
 .category-card-image img {
+  padding-top: 15px;
   width: 100%;
   height: 100%;
   border-radius: 10px;  
