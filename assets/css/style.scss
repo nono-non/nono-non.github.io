@@ -250,7 +250,7 @@ body, p, li {
   background-color: #ffffff;
   /* グレーの影ではなく、文字色(#4A3B3A)を薄くした温かみのある影にする */
   box-shadow: 0 4px 12px rgba(74, 59, 58, 0.08); 
-  border-radius: 12px;
+  border-radius: 15px;
   flex:1;
   height: 160px; /* 好きな高さに */
   padding: 7px 7px 4px;   /* 枠の太さ */
@@ -311,7 +311,7 @@ body, p, li {
   padding: 7px;        /* 枠の太さ */
   box-sizing: border-box; /* paddingを含めて高さ固定にする */
   margin-bottom: 16px;
-  border-radius: 12px;         /* 角を丸くする */
+  border-radius: 15px;         /* 角を丸くする */
   overflow: hidden;           /* 丸めた角から画像や背景がはみ出さないようにする */
 }
 
