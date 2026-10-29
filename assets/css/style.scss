@@ -168,6 +168,7 @@ body, p, li {
 .post-upper-navigation .disabled {
   color: var(--text-color);
   cursor: not-allowed;
+  opacity: 0.3;
 }
 
 /* 中央の「記事一覧へ」のボタン風スタイル */
