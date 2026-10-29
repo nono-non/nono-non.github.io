@@ -121,7 +121,7 @@ body, p, li {
   font-weight: bold;
   padding: 8px 16px;       /* 文字のまわりに余白をとってカプセル状にする */
   border-radius: 20px;     /* 角を丸くしてカプセル型にする */
-  transition: 0.2s ease; /* （お好みで）背景色の変化をなめらかに */
+  transition: background-color 0.2s ease; /* （お好みで）背景色の変化をなめらかに */
 }
 
 /* マウスを乗せたとき（ホバーしたとき）の見た目 */
@@ -145,10 +145,10 @@ body, p, li {
 /* ナビゲーション全体のコンテナ */
 .post-upper-navigation {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   align-items: center;
   padding: 0 10px 40px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
