@@ -124,7 +124,7 @@ body, p, li {
   box-sizing: border-box;
   margin-bottom:36px;
   display: flex;
-  background: #f5f5f5;
+  background: #f3ebe4;;
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center;     /* 垂直方向の中央揃え */
   height: 50px;            /* 高さを少しゆとりを持たせる */
@@ -169,14 +169,14 @@ body, p, li {
   align-items: center;
   padding: 9px 15px;
   font-size: 15px;
-  background: #f5f5f5;
+  background: #f3ebe4;;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
 .post-upper-navigation a,
 .post-upper-navigation span {
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   transition: opacity 0.2s;
 }
