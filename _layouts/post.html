@@ -12,9 +12,9 @@ layout: default
 <div class="post-upper-navigation">
   <!-- 前の記事（存在する場合） -->
   {% if page.previous.url %}
-    <a href="{{ page.previous.url | relative_url }}" class="upper-nav-prev">&laquo; 前の記事</a>
+    <a href="{{ page.previous.url | relative_url }}" class="upper-nav-prev">‹ 前の記事</a>
   {% else %}
-    <span class="upper-nav-prev disabled">&laquo; 前の記事</span>
+    <span class="upper-nav-prev disabled">‹ 前の記事</span>
   {% endif %}
 
   <!-- 記事一覧へ -->
@@ -22,12 +22,11 @@ layout: default
 
   <!-- 次の記事（存在する場合） -->
   {% if page.next.url %}
-    <a href="{{ page.next.url | relative_url }}" class="upper-nav-next">次の記事 &raquo;</a>
+    <a href="{{ page.next.url | relative_url }}" class="upper-nav-next">次の記事 ›</a>
   {% else %}
-    <span class="upper-nav-next disabled">次の記事 &raquo;</span>
+    <span class="upper-nav-next disabled">次の記事 ›</span>
   {% endif %}
 </div>
-<hr>
 
 <h1>{{ page.title }}</h1>
 
