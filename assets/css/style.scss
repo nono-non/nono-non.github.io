@@ -144,6 +144,9 @@ body, p, li {
 
 /* ナビゲーション全体のコンテナ */
 .post-upper-navigation {
+  position: sticky; /* 画面に固定する設定 */
+  top: 0;           /* 画面の一番上に張り付かせる */
+  z-index: 100;     /* 他のコンテンツの下に隠れてしまわないように手前に表示する */
   display: flex;
   justify-content: space-between;
   align-items: center;
