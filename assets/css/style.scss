@@ -107,7 +107,8 @@ body, p, li {
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center;     /* 垂直方向の中央揃え */
   height: 50px;            /* 高さを少しゆとりを持たせる */
-  gap: 16px;               /* 項目と項目の間のすき間を綺麗に空ける */
+  gap: 16px;               
+  margin-bottom: 0px; /*項目と項目の間のすき間を綺麗に空ける */
 }
 
 .global-nav a {
@@ -145,7 +146,7 @@ body, p, li {
   align-items: center;
   padding: 0 10px 30px;
   margin-top: 0;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
