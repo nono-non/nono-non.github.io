@@ -45,6 +45,27 @@
     {% endif %}
   </header>
   
+  {% if page.hide_global_nav %}
+  <div class="post-upper-navigation">
+  <!-- 前の記事（存在する場合） -->
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="upper-nav-prev">&laquo; 前の記事</a>
+  {% else %}
+    <span class="upper-nav-prev disabled">&laquo; 前の記事</span>
+  {% endif %}
+
+  <!-- 記事一覧へ -->
+  <a href="{{ '/stock-blog.html' | relative_url }}" class="upper-nav-list">記事一覧へ</a>
+
+  <!-- 次の記事（存在する場合） -->
+  {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="upper-nav-next">次の記事 &raquo;</a>
+  {% else %}
+    <span class="upper-nav-next disabled">次の記事 &raquo;</span>
+  {% endif %}
+</div>
+  {% endif %}
+  
   {% unless page.hide_global_nav %}
   <div class="global-nav">
     <!-- ホーム：URLが完全に「/」のときだけ光る -->
