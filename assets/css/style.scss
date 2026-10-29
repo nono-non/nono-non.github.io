@@ -81,10 +81,15 @@ body, p, li {
 .page-header {
   background-color: var(--main-color);
   background-image: none;/* caymanの初期はグラデーション緑の画像が使われてたっぽい。背景色を設定しても画像に上書きされることがあるのでこれで画像消す */
-  display: flex;
-  align-items: center;      /* 縦の中央 */
-  justify-content: center;  /* 横の中央 */
   padding:7px 0;/* ヘッダーの高さはcaymanテーマはheightじゃなくpaddingになってるっぽい */
+}
+
+.page-header a {
+  align-items: center;      /* 縦の中央 */
+  display: flex; /*フレックスボックスにして中身を縦に並べる */
+  height: 100%; /* リンクの判定エリアをカードの高さいっぱいにしてるどこ推してもリンクに飛ぶ */
+  text-decoration: none;/*リンクの下のアンダーラインを消す時はこう*/
+  justify-content: center;/*これを使うときは同じ階層にdesplay flexが必要*/
 }
 
 .project-name {
