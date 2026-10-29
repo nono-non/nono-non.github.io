@@ -43,8 +43,7 @@
     {% endif %}
   </header>
   
-  {% if !page.url contains '/kabu/'
-      %}
+  {% if unless page.hide_global_nav %}
   <div class="global-nav">
     <!-- ホーム：URLが完全に「/」のときだけ光る -->
     <a href="{{ '/' | relative_url }}" {% if page.url=='/' %}class="current" {% endif %}>ホーム</a>
@@ -54,8 +53,7 @@
       %}>手作りアプリ</a>
 
     <!-- 株ブログ：URLが「/blog.html」のとき、または個別のブログ記事（例: /blog/...）のときにも光らせる -->
-    <a href="{{ '/stock-blog.html' | relative_url }}" {% if page.url=='/stock-blog.html' or page.url contains '/kabu/'
-      %}class="current" {% endif %}>株ブログ</a>
+    <a href="{{ '/stock-blog.html' | relative_url }}" {% if page.url=='/stock-blog.html' %}class="current" {% endif %}>株ブログ</a>
   </div>
   {% endif %}
   
