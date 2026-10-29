@@ -121,7 +121,7 @@ body, p, li {
   font-weight: bold;
   padding: 8px 16px;       /* 文字のまわりに余白をとってカプセル状にする */
   border-radius: 20px;     /* 角を丸くしてカプセル型にする */
-  transition: background-color 0.2s ease; /* （お好みで）背景色の変化をなめらかに */
+  transition: 0.2s ease; /* （お好みで）背景色の変化をなめらかに */
 }
 
 /* マウスを乗せたとき（ホバーしたとき）の見た目 */
