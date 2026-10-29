@@ -14,7 +14,7 @@ layout: default
   {% if page.previous.url %}
     <a href="{{ page.previous.url | relative_url }}" class="upper-nav-prev">&laquo; 前の記事</a>
   {% else %}
-    <span class="upper-nav-prev disabled">前の記事</span>
+    <span class="upper-nav-prev disabled">&laquo; 前の記事</span>
   {% endif %}
 
   <!-- 記事一覧へ -->
@@ -24,7 +24,7 @@ layout: default
   {% if page.next.url %}
     <a href="{{ page.next.url | relative_url }}" class="upper-nav-next">次の記事 &raquo;</a>
   {% else %}
-    <span class="upper-nav-next disabled">次の記事</span>
+    <span class="upper-nav-next disabled">次の記事 &raquo;</span>
   {% endif %}
 </div>
 
