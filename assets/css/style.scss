@@ -143,10 +143,8 @@ body, p, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
@@ -172,7 +170,7 @@ body, p, li {
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: #d99b9b; /* ボタンのピンク色（お好みに合わせて微調整してください） */
+  background-color: var(--main-color); /*ボタンのピンク色（お好みに合わせて微調整してください） */
   color: #fff;               /* 文字色を白に[span_2](start_span)[span_2](end_span) */
   padding: 8px 18px;         /* ボタンの上下左右の余白 */
   border-radius: 20px;       /* 綺麗な角丸に */
