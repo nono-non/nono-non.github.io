@@ -171,14 +171,14 @@ body, p, li {
   justify-content: center;
   align-items: center;
   background: #f3ebe4;
-  gap:17px;
+  gap:16px;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
 .post-upper-navigation a,
 .post-upper-navigation span {
   color: var(--text-color);
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: none;
   transition: opacity 0.2s;
   font-size: 0.9em;
