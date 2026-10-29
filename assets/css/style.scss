@@ -138,6 +138,62 @@ body, p, li {
   margin:0em;
 }
 
+/* ナビゲーション全体のコンテナ */
+.post-upper-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #eee; /* 必要に応じて上下の枠線を調整してください */
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* リンクおよび非活性状態の共通スタイル */
+.post-upper-navigation a,
+.post-upper-navigation span {
+  color: #333;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.post-upper-navigation a:hover {
+  opacity: 0.7;
+}
+
+/* 非活性（前の記事や次の記事がない場合）のスタイル */
+.post-upper-navigation .disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 中央の「記事一覧へ」のスタイル */
+.post-upper-navigation .upper-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* アイコンと文字の間隔 */
+}
+
+/* リストアイコンの作成（疑似要素を使用）[span_0](start_span)[span_0](end_span) */
+.post-upper-navigation .upper-nav-list::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  /* 簡単なリスト風アイコンをCSSで描画 */
+  background: linear-gradient(
+    to bottom,
+    #333 2px, transparent 2px,
+    #333 4px, transparent 4px,
+    #333 6px, transparent 6px,
+    #333 8px, transparent 8px,
+    #333 10px, transparent 10px,
+    #333 12px, transparent 12px
+  );
+  /* もしFont Awesomeなどのアイコンフォントを使っている場合は、ここの設定を書き換えてください */
+}
+
+
 /* ==========================================
    3. ブログカード関連（ホームや新着記事など共通）
    ========================================== */
