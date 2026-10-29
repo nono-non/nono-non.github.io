@@ -3,4 +3,10 @@ description: "試行錯誤中"
 theme: jekyll-theme-cayman
 paginate: 10
 paginate_path: "/page:num/"
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      hide_global_nav: true
 
