@@ -6,7 +6,7 @@ paginate_path: "/page:num/"
 defaults:
   - scope:
       path: ""
-      type: "_posts"
+      type: "posts"
     values:
       hide_global_nav: true
 
