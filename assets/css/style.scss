@@ -27,6 +27,10 @@ html {
 body, p, li {
   color: var(--text-color);
 }
+
+.main-content{
+  margin-top: 0;
+}
 /*通常使うpやh1などの装飾*/
 .main-content p {
   margin-bottom: 2.5em;
