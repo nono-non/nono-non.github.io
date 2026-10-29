@@ -144,13 +144,14 @@ body, p, li {
   justify-content: space-between;
   align-items: center;
   padding: 5px 15px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
 .post-upper-navigation a,
 .post-upper-navigation span {
   color: var(--text-color);
+  font-weight: bold;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -196,8 +197,6 @@ body, p, li {
     #fff 6px, transparent 6px
   );
 }
-
-
 
 /* ==========================================
    3. ブログカード関連（ホームや新着記事など共通）
