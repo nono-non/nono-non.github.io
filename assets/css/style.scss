@@ -87,10 +87,11 @@ body, p, li {
   padding:7px 0;/* ヘッダーの高さはcaymanテーマはheightじゃなくpaddingになってるっぽい */
 }
 
-.project-name {
+.project-name a {
   font-size:31px;
   letter-spacing:0.02em;
   padding-right:15px;
+  text-decoration: none;
 }
 
 .page-header img{
