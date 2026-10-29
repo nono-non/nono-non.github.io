@@ -143,8 +143,8 @@ body, p, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
-  border-top: 1px solid #eee; /* 必要に応じて上下の枠線を調整してください */
+  padding: 15px 10px;
+  border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   font-size: 14px;
 }
@@ -152,7 +152,7 @@ body, p, li {
 /* リンクおよび非活性状態の共通スタイル */
 .post-upper-navigation a,
 .post-upper-navigation span {
-  color: #333;
+  color: #555;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -167,31 +167,38 @@ body, p, li {
   cursor: not-allowed;
 }
 
-/* 中央の「記事一覧へ」のスタイル */
+/* 中央の「記事一覧へ」のボタン風スタイル */
 .post-upper-navigation .upper-nav-list {
   display: flex;
   align-items: center;
-  gap: 6px; /* アイコンと文字の間隔 */
+  gap: 6px;
+  background-color: #d99b9b; /* ボタンのピンク色（お好みに合わせて微調整してください） */
+  color: #fff;               /* 文字色を白に[span_2](start_span)[span_2](end_span) */
+  padding: 8px 18px;         /* ボタンの上下左右の余白 */
+  border-radius: 20px;       /* 綺麗な角丸に */
 }
 
-/* リストアイコンの作成（疑似要素を使用）[span_0](start_span)[span_0](end_span) */
+/* 中央ボタン内の文字とアイコンの色も白に統一 */
+.post-upper-navigation .upper-nav-list:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+/* 3本線のリストアイコン（CSS描画）[span_3](start_span)[span_3](end_span) */
 .post-upper-navigation .upper-nav-list::before {
   content: "";
   display: inline-block;
   width: 14px;
-  height: 12px;
-  /* 簡単なリスト風アイコンをCSSで描画 */
+  height: 10px;
+  /* 白色の3本線を作成 */
   background: linear-gradient(
     to bottom,
-    #333 2px, transparent 2px,
-    #333 4px, transparent 4px,
-    #333 6px, transparent 6px,
-    #333 8px, transparent 8px,
-    #333 10px, transparent 10px,
-    #333 12px, transparent 12px
+    #fff 2px, transparent 2px,
+    #fff 4px, transparent 4px,
+    #fff 6px, transparent 6px
   );
-  /* もしFont Awesomeなどのアイコンフォントを使っている場合は、ここの設定を書き換えてください */
 }
+
 
 
 /* ==========================================
