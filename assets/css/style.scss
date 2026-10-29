@@ -29,8 +29,7 @@ body, p, li {
 }
 
 .main-content{
-  margin-top: 0;
-  padding-top: 0;
+  padding-top: 3px;
 }
 /*通常使うpやh1などの装飾*/
 .main-content p {
@@ -146,9 +145,9 @@ body, p, li {
 /* ナビゲーション全体のコンテナ */
 .post-upper-navigation {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   align-items: center;
-  padding: 0 10px 40px;
+  padding: 0 15px 40px;
   font-size: 15px;
 }
 
