@@ -171,7 +171,7 @@ body, p, li {
   justify-content: center;
   align-items: center;
   background: #f3ebe4;
-  gap:28px;
+  gap:20px;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
@@ -182,6 +182,7 @@ body, p, li {
   text-decoration: none;
   transition: opacity 0.2s;
   font-size: 0.9em;
+  padding: 8px 16px;   
 }
 
 .post-upper-navigation a:hover {
@@ -197,11 +198,8 @@ body, p, li {
 
 /* 中央の「記事一覧へ」のボタン風スタイル */
 .post-upper-navigation .upper-nav-list {
-  align-items: center;
-  gap: 6px;
   background-color: var(--text-color); /*ボタンのピンク色（お好みに合わせて微調整してください） */
   color: #fff;               /* 文字色を白に[span_2](start_span)[span_2](end_span) */
-  padding: 8px 18px;         /* ボタンの上下左右の余白 */
   border-radius: 20px;       /* 綺麗な角丸に */
 }
 
