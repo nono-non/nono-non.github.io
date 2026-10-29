@@ -150,7 +150,7 @@ body, p, li {
 /* リンクおよび非活性状態の共通スタイル */
 .post-upper-navigation a,
 .post-upper-navigation span {
-  color: #555;
+  color: var(--text-color);
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -161,7 +161,7 @@ body, p, li {
 
 /* 非活性（前の記事や次の記事がない場合）のスタイル */
 .post-upper-navigation .disabled {
-  color: #ccc;
+  color: var(--text-color);
   cursor: not-allowed;
 }
 
