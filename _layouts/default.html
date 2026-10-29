@@ -31,8 +31,10 @@
   <a id="skip-to-content" href="#content">Skip to the content.</a>
 
   <header class="page-header" role="banner">
+    <a href="{{ '/' | relative_url }}">
     <img src="/assets/images/white.png" alt="トリケラトプスの画像">
     <h1 class="project-name" >{{ site.title }}</h1>
+    </a>
     <!--<h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>-->
     {% if site.github.is_project_page %}
     <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
