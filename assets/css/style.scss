@@ -143,8 +143,9 @@ body, p, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px 20px;
-  font-size: 14px;
+  padding: 0 10px 30px;
+  margin-top: 0;
+  font-size: 16px;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
@@ -168,7 +169,6 @@ body, p, li {
 
 /* 中央の「記事一覧へ」のボタン風スタイル */
 .post-upper-navigation .upper-nav-list {
-  display: flex;
   align-items: center;
   gap: 6px;
   background-color: var(--main-color); /*ボタンのピンク色（お好みに合わせて微調整してください） */
@@ -181,21 +181,6 @@ body, p, li {
 .post-upper-navigation .upper-nav-list:hover {
   opacity: 0.85;
   color: #fff;
-}
-
-/* 3本線のリストアイコン（CSS描画）[span_3](start_span)[span_3](end_span) */
-.post-upper-navigation .upper-nav-list::before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 10px;
-  /* 白色の3本線を作成 */
-  background: linear-gradient(
-    to bottom,
-    #fff 2px, transparent 2px,
-    #fff 4px, transparent 4px,
-    #fff 6px, transparent 6px
-  );
 }
 
 /* ==========================================
