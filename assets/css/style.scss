@@ -161,14 +161,15 @@ body, p, li {
 
 /* ナビゲーション全体のコンテナ */
 .post-upper-navigation {
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
   position: sticky; /* 画面に固定する設定 */
   top: 0;           /* 画面の一番上に張り付かせる */
   z-index: 100;     /* 他のコンテンツの下に隠れてしまわないように手前に表示する */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 15px;
-  font-size: 15px;
   background: #f3ebe4;;
 }
 
@@ -179,6 +180,7 @@ body, p, li {
   font-weight: 500;
   text-decoration: none;
   transition: opacity 0.2s;
+  font-size: 0.9em;
 }
 
 .post-upper-navigation a:hover {
