@@ -70,6 +70,17 @@ body, p, li {
   display: none;
 }
 
+/*トップページのカテゴリーや新着記事の文字装飾*/
+.section-label{
+  font-size: 28px;
+  color: #4a3b3a;
+  font-weight: bold;
+  text-align:center;
+  margin-top:40px;
+  margin-bottom:20px;
+  letter-spacing:0.02em;
+}
+
 /*本文の文字の大きさとか装飾*/
 .small-text {
   font-size: 85%;
@@ -288,16 +299,6 @@ body, p, li {
 
 #markdown-toc li:last-child {
   border-bottom: none;
-}
-
-/*トップページのカテゴリーや新着記事の文字装飾*/
-.section-label{
-  font-size: 28px;
-  color: #4a3b3a;
-  font-weight: bold;
-  text-align:center;
-  margin-bottom:20px;
-  letter-spacing:0.02em;
 }
 
 /*カテゴリ0カードの全体装飾*/
