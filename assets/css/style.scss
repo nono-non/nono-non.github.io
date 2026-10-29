@@ -149,6 +149,7 @@ body, p, li {
   align-items: center;
   padding: 15px 15px 15px;
   font-size: 15px;
+  border-bottom: 1px solid #eee;
 }
 
 /* リンクおよび非活性状態の共通スタイル */
@@ -169,6 +170,22 @@ body, p, li {
   color: var(--text-color);
   cursor: not-allowed;
   opacity: 0.3;
+}
+
+/* 中央の「記事一覧へ」のボタン風スタイル */
+.post-upper-navigation .upper-nav-list {
+  align-items: center;
+  gap: 6px;
+  background-color: var(--text-color); /*ボタンのピンク色（お好みに合わせて微調整してください） */
+  color: #fff;               /* 文字色を白に[span_2](start_span)[span_2](end_span) */
+  padding: 8px 18px;         /* ボタンの上下左右の余白 */
+  border-radius: 20px;       /* 綺麗な角丸に */
+}
+
+/* 中央ボタン内の文字とアイコンの色も白に統一 */
+.post-upper-navigation .upper-nav-list:hover {
+  opacity: 0.85;
+  color: #fff;
 }
 
 /* ==========================================
