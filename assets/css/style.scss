@@ -166,11 +166,11 @@ body, p, li {
   width: 100%;
   position: sticky; /* 画面に固定する設定 */
   top: 0;           /* 画面の一番上に張り付かせる */
-  z-index: 100;     /* 他のコンテンツの下に隠れてしまわないように手前に表示する */
+  z-index: 100;     /* 他のコンテンツf3ebe4の下に隠れてしまわないように手前に表示する */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f3ebe4;
+  background: #FFF7EA;
   gap:16px;
 }
 
