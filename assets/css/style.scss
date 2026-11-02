@@ -6,7 +6,7 @@
    0. 色の設定（ここを変えるとサイト全体の色が変わる）
    ========================================== */
 :root {
-  --main-color: #E5BEAB;  /*メインカラー：ヘッダー・h2・h3・もくじの枠と点・前後の記事リンク */
+  --main-color: #E5BEAB;  /*メインカラー：E5BEABヘッダー・h2・h3・c6a093もくじの枠と点・前後の記事リンク */
   --main-color-light: #EBE3D5;  /* メインカラーの薄い版：もくじの外枠線・項目の点線 */
   --text-color: #3e2f2d;        /* 濃い焦茶：本文・ナビ・h2の文字など */
 }
@@ -124,9 +124,9 @@ body, p, li {
   box-sizing: border-box;
   margin-bottom:36px;
   display: flex;
-  background: #f3ebe4;;
-  justify-content: center; /* 水平方向の中央揃え */
-  align-items: center;     /* 垂直方向の中央揃え */
+  background: #f2efe7;
+  justify-content: center; /* 水平f3ebe4方向のf7efe6中央fff1e8揃え */
+  align-items: center;     /* 垂直方向のf4f1ee中央揃え */
   height: 50px;            /* 高さを少しゆとりを持たせる */
   gap: 16px; /*項目と項目の間のすき間を綺麗に空ける */
 }
@@ -166,11 +166,11 @@ body, p, li {
   width: 100%;
   position: sticky; /* 画面に固定する設定 */
   top: 0;           /* 画面の一番上に張り付かせる */
-  z-index: 100;     /* 他のコンテンツの下に隠れてしまわないように手前に表示する */
+  z-index: 100;     /* 他のコンテンツf3ebe4の下に隠れてしまわないように手前に表示する */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f3ebe4;
+  background: #f2efe7;
   gap:16px;
 }
 
